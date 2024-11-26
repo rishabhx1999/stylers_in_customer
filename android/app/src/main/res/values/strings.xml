@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_app_id">846146450057029</string>
+    <string name="fb_login_protocol_scheme">fb846146450057029</string>
+    <string name="facebook_client_token">7a502949abdc5b4f107aed36bafd8e5e</string>
+    <string name="google_api_key">AIzaSyAaVnz03Xmd1cZGKPcVcKFHg0rAX4o_BAs</string>
+    <string name="app_name">StylersIn</string>
+</resources>
