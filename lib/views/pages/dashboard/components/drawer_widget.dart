@@ -47,9 +47,13 @@ class DrawerWidget extends StatelessWidget {
                     ),
                     Text(
                       _homeController.personName.value,
-                      style: Theme.of(context).textTheme.headline6?.copyWith(
-                          fontSize: AppConsts.commonFontSizeFactor * 12,
-                          color: Colors.black),
+                      style: Theme.of(context)
+                          .textTheme
+                          .headlineSmall
+                          ?.copyWith(
+                              fontSize: AppConsts.commonFontSizeFactor * 12,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.black),
                     ),
                     const Spacer(),
                     IconButton(
@@ -85,7 +89,7 @@ class DrawerWidget extends StatelessWidget {
                   ),
                   title: Text(
                     'profile'.tr,
-                    style: Theme.of(context).textTheme.headline5?.copyWith(
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                         color: Colors.black,
                         fontSize: AppConsts.commonFontSizeFactor * 16),
                   ),
@@ -119,9 +123,12 @@ class DrawerWidget extends StatelessWidget {
                     children: [
                       Text(
                         'wallet'.tr,
-                        style: Theme.of(context).textTheme.headline5?.copyWith(
-                            color: Colors.black,
-                            fontSize: AppConsts.commonFontSizeFactor * 16),
+                        style: Theme.of(context)
+                            .textTheme
+                            .headlineSmall
+                            ?.copyWith(
+                                color: Colors.black,
+                                fontSize: AppConsts.commonFontSizeFactor * 16),
                       ),
                       Obx(
                         () => Visibility(
@@ -132,7 +139,7 @@ class DrawerWidget extends StatelessWidget {
                                 text: 'amount_colon'.tr,
                                 style: Theme.of(context)
                                     .textTheme
-                                    .headline5
+                                    .headlineSmall
                                     ?.copyWith(
                                         color: Colors.black,
                                         fontSize:
@@ -147,11 +154,12 @@ class DrawerWidget extends StatelessWidget {
                                   '${_homeController.isLoggedIn.value ? _homeController.walletBalance.value : 0} USD',
                               style: Theme.of(context)
                                   .textTheme
-                                  .subtitle1
+                                  .bodySmall
                                   ?.copyWith(
                                     color: Colors.black,
                                     fontSize:
                                         AppConsts.commonFontSizeFactor * 12,
+                                    fontWeight: FontWeight.w300,
                                   ),
                             )
                           ])),
@@ -182,7 +190,7 @@ class DrawerWidget extends StatelessWidget {
                   ),
                   title: Text(
                     'booking_history'.tr,
-                    style: Theme.of(context).textTheme.headline5?.copyWith(
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                         color: Colors.black,
                         fontSize: AppConsts.commonFontSizeFactor * 16),
                   ),
@@ -209,7 +217,7 @@ class DrawerWidget extends StatelessWidget {
                   ),
                   title: Text(
                     'settings'.tr,
-                    style: Theme.of(context).textTheme.headline5?.copyWith(
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                         color: Colors.black,
                         fontSize: AppConsts.commonFontSizeFactor * 16),
                   ),
@@ -224,7 +232,7 @@ class DrawerWidget extends StatelessWidget {
                   ),
                   title: Text(
                     'turn_pro'.tr,
-                    style: Theme.of(context).textTheme.headline5?.copyWith(
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                         color: Colors.black,
                         fontSize: AppConsts.commonFontSizeFactor * 16),
                   ),

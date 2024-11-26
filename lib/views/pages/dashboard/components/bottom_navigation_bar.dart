@@ -75,7 +75,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
                 height: 6,
               ),
               Text(label.tr,
-                  style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
                         fontWeight: FontWeight.w600,
                         fontSize: AppConsts.commonFontSizeFactor * 13,
                         color: index == selectedIndex

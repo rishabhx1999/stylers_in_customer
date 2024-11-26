@@ -25,7 +25,7 @@ class PostScreen extends StatelessWidget {
     SystemChrome.setSystemUIOverlayStyle(
         SystemUiOverlayStyle.dark.copyWith(statusBarColor: Colors.transparent));
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: AppColors.appBackgroundColor,
       appBar: CommonAppBar(
         title: 'post'.tr,
         onBackTap: () {
@@ -447,7 +447,7 @@ class PostScreen extends StatelessWidget {
                                                           TextOverflow.ellipsis,
                                                       style: Theme.of(context)
                                                           .textTheme
-                                                          .headline5
+                                                          .headlineSmall
                                                           ?.copyWith(
                                                               fontSize: AppConsts
                                                                       .commonFontSizeFactor *
@@ -464,7 +464,7 @@ class PostScreen extends StatelessWidget {
                                                           TextOverflow.ellipsis,
                                                       style: Theme.of(context)
                                                           .textTheme
-                                                          .headline5
+                                                          .headlineSmall
                                                           ?.copyWith(
                                                               fontSize: AppConsts
                                                                       .commonFontSizeFactor *
@@ -483,7 +483,7 @@ class PostScreen extends StatelessWidget {
                                               overflow: TextOverflow.ellipsis,
                                               style: Theme.of(context)
                                                   .textTheme
-                                                  .headline5
+                                                  .headlineSmall
                                                   ?.copyWith(
                                                       fontSize: AppConsts
                                                               .commonFontSizeFactor *
@@ -508,7 +508,7 @@ class PostScreen extends StatelessWidget {
                                     softWrap: true,
                                     style: Theme.of(context)
                                         .textTheme
-                                        .headline5
+                                        .headlineSmall
                                         ?.copyWith(color: Colors.black),
                                   ),
                                 ),
@@ -575,7 +575,7 @@ class PostScreen extends StatelessWidget {
                                                 .toString(),
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .headline5
+                                                .headlineSmall
                                                 ?.copyWith(
                                                     fontSize: AppConsts
                                                             .commonFontSizeFactor *
@@ -605,7 +605,7 @@ class PostScreen extends StatelessWidget {
                                                 .toString(),
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .headline5
+                                                .headlineSmall
                                                 ?.copyWith(
                                                     fontSize: AppConsts
                                                             .commonFontSizeFactor *
@@ -647,7 +647,7 @@ class PostScreen extends StatelessWidget {
                                               softWrap: true,
                                               style: Theme.of(context)
                                                   .textTheme
-                                                  .headline5
+                                                  .headlineSmall
                                                   ?.copyWith(
                                                       fontSize: AppConsts
                                                               .commonFontSizeFactor *
@@ -705,7 +705,7 @@ class PostScreen extends StatelessWidget {
                                           .commentController,
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headline5
+                                          .headlineSmall
                                           ?.copyWith(color: Colors.black),
                                       keyboardType: TextInputType.text,
                                       cursorColor: AppColors.kPrimaryDarkColor,
@@ -713,7 +713,7 @@ class PostScreen extends StatelessWidget {
                                         hintText: 'type_your_comment'.tr,
                                         hintStyle: Theme.of(context)
                                             .textTheme
-                                            .bodyText1
+                                            .bodySmall
                                             ?.copyWith(
                                                 fontSize: AppConsts
                                                         .commonFontSizeFactor *

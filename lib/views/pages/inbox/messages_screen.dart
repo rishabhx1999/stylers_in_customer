@@ -22,7 +22,7 @@ class MessagesScreen extends StatelessWidget {
       borderRadius: BorderRadius.circular(17.5),
     );
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: AppColors.appBackgroundColor,
       appBar: AppBar(
         automaticallyImplyLeading: false,
         flexibleSpace: Container(
@@ -55,13 +55,13 @@ class MessagesScreen extends StatelessWidget {
                   children: [
                     Text(
                       'Lara Seth',
-                      style: Theme.of(context).textTheme.headline4?.copyWith(
+                      style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                           color: Colors.black,
                           fontSize: AppConsts.commonFontSizeFactor * 16),
                     ),
                     Text(
                       'Hair Stylist',
-                      style: Theme.of(context).textTheme.headline5?.copyWith(
+                      style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                           color: Colors.black.withOpacity(0.6),
                           fontSize: AppConsts.commonFontSizeFactor * 12),
                     )
@@ -127,7 +127,7 @@ class MessagesScreen extends StatelessWidget {
                           controller: _messageController.messageController,
                           style: Theme.of(context)
                               .textTheme
-                              .headline5
+                              .headlineSmall
                               ?.copyWith(color: Colors.black),
                           keyboardType: TextInputType.text,
                           cursorColor: AppColors.kPrimaryDarkColor,
@@ -153,10 +153,10 @@ class MessagesScreen extends StatelessWidget {
                             hintText: 'type_your_message'.tr,
                             hintStyle: Theme.of(context)
                                 .textTheme
-                                .subtitle1
+                                .bodySmall
                                 ?.copyWith(
                                     fontSize: AppConsts.commonFontSizeFactor * 12,
-                                    color: Colors.black.withOpacity(0.4)),
+                                    color: Colors.black.withOpacity(0.4),fontWeight: FontWeight.w300,),
                             fillColor: AppColors.kPrimaryColor.withOpacity(0.02),
                             filled: true,
                             errorBorder: messageFieldBorder,

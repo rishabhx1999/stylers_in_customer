@@ -5,6 +5,7 @@ import 'package:stylers_in_customer/consts/app_consts.dart';
 import 'package:stylers_in_customer/consts/app_icons.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../../../config/app_colors.dart';
 import '../../widgets/common/common_button.dart';
 
 class RefundConfirmationScreen extends StatelessWidget {
@@ -14,7 +15,7 @@ class RefundConfirmationScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Theme.of(context).backgroundColor,
+    return Scaffold(backgroundColor: AppColors.appBackgroundColor,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -31,7 +32,7 @@ class RefundConfirmationScreen extends StatelessWidget {
             'your_request_has_been_received'.tr,
             style: Theme.of(context)
                 .textTheme
-                .headline3
+                .headlineMedium
                 ?.copyWith(color: Colors.black),
           ),
           const SizedBox(
@@ -41,7 +42,7 @@ class RefundConfirmationScreen extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 40.0),
             child: Text(
               'delivery_message'.tr,
-              style: Theme.of(context).textTheme.headline5?.copyWith(
+              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                   color: Colors.black.withOpacity(0.4),
                   fontSize: AppConsts.commonFontSizeFactor * 12),
             ),

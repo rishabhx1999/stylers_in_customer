@@ -23,10 +23,10 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark
-        .copyWith(statusBarColor: Theme.of(context).backgroundColor));
+        .copyWith(statusBarColor: AppColors.appBackgroundColor));
 
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: AppColors.appBackgroundColor,
       body: Stack(
         children: [
           GestureDetector(
@@ -57,7 +57,7 @@ class LoginScreen extends StatelessWidget {
                           const EdgeInsets.only(left: 16, right: 16, top: 0),
                       child: Text(
                         'welcome_back'.tr,
-                        style: Theme.of(context).textTheme.headline5?.copyWith(
+                        style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                             color: AppColors.textColorPrimary,
                             fontSize: AppConsts.commonFontSizeFactor * 22),
                       ),
@@ -67,7 +67,7 @@ class LoginScreen extends StatelessWidget {
                           const EdgeInsets.only(left: 16, right: 16, top: 9),
                       child: Text(
                         'login_sub_title'.tr,
-                        style: Theme.of(context).textTheme.headline5?.copyWith(
+                        style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                             color: Colors.black.withOpacity(0.6),
                             fontSize: AppConsts.commonFontSizeFactor * 13),
                       ),
@@ -112,7 +112,7 @@ class LoginScreen extends StatelessWidget {
                                   'remember_me'.tr,
                                   style: Theme.of(context)
                                       .textTheme
-                                      .bodyText1
+                                      .bodySmall
                                       ?.copyWith(
                                           fontWeight: FontWeight.w300,
                                           fontSize:
@@ -134,7 +134,7 @@ class LoginScreen extends StatelessWidget {
                                 'forgot_password_que'.tr,
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText1
+                                    .bodySmall
                                     ?.copyWith(
                                         fontSize:
                                             AppConsts.commonFontSizeFactor * 12,
@@ -179,7 +179,7 @@ class LoginScreen extends StatelessWidget {
                               'or'.tr,
                               style: Theme.of(context)
                                   .textTheme
-                                  .bodyText1
+                                  .bodySmall
                                   ?.copyWith(
                                       fontWeight: FontWeight.w300,
                                       fontSize:
@@ -232,7 +232,7 @@ class LoginScreen extends StatelessWidget {
                               text: "dont_have_account".tr,
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline5
+                                  .headlineSmall
                                   ?.copyWith(
                                       color: Colors.black.withOpacity(0.6),
                                       fontSize:
@@ -245,7 +245,7 @@ class LoginScreen extends StatelessWidget {
                               text: "sign_up".tr,
                               style: Theme.of(context)
                                   .textTheme
-                                  .bodyText1
+                                  .bodySmall
                                   ?.copyWith(
                                       color: AppColors.kPrimaryColor,
                                       fontWeight: FontWeight.w600,
@@ -274,7 +274,7 @@ class LoginScreen extends StatelessWidget {
                           'login_as_a_visitor'.tr,
                           style: Theme.of(context)
                               .textTheme
-                              .bodyText1
+                              .bodySmall
                               ?.copyWith(
                                   fontWeight: FontWeight.w600,
                                   color: AppColors.kPrimaryColor,

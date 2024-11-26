@@ -48,17 +48,23 @@ class InboxCellWidget extends StatelessWidget {
                       ),
                       Text(
                         'Ivan Smith',
-                        style: Theme.of(context).textTheme.headline6?.copyWith(
-                              color: isRead ? Colors.black : Colors.white,
-                            ),
+                        style:
+                            Theme.of(context).textTheme.headlineSmall?.copyWith(
+                                  color: isRead ? Colors.black : Colors.white,
+                                  fontSize: AppConsts.commonFontSizeFactor * 12,
+                                  fontWeight: FontWeight.w500,
+                                ),
                       ),
                       Text(
                         'Hair Stylist',
-                        style: Theme.of(context).textTheme.headline5?.copyWith(
-                            color: isRead
-                                ? Colors.black.withOpacity(0.6)
-                                : Colors.white.withOpacity(0.6),
-                            fontSize: AppConsts.commonFontSizeFactor * 12),
+                        style: Theme.of(context)
+                            .textTheme
+                            .headlineSmall
+                            ?.copyWith(
+                                color: isRead
+                                    ? Colors.black.withOpacity(0.6)
+                                    : Colors.white.withOpacity(0.6),
+                                fontSize: AppConsts.commonFontSizeFactor * 12),
                       )
                     ],
                   ),
@@ -72,11 +78,14 @@ class InboxCellWidget extends StatelessWidget {
                     ),
                     Text(
                       '2D',
-                      style: Theme.of(context).textTheme.headline5?.copyWith(
-                          color: isRead
-                              ? Colors.black.withOpacity(0.6)
-                              : Colors.white.withOpacity(0.6),
-                          fontSize: AppConsts.commonFontSizeFactor * 12),
+                      style: Theme.of(context)
+                          .textTheme
+                          .headlineSmall
+                          ?.copyWith(
+                              color: isRead
+                                  ? Colors.black.withOpacity(0.6)
+                                  : Colors.white.withOpacity(0.6),
+                              fontSize: AppConsts.commonFontSizeFactor * 12),
                     )
                   ],
                 )
@@ -87,7 +96,7 @@ class InboxCellWidget extends StatelessWidget {
             ),
             Text(
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet, consectetur ',
-              style: Theme.of(context).textTheme.headline5?.copyWith(
+              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                   color: isRead ? Colors.black : Colors.white,
                   fontSize: AppConsts.commonFontSizeFactor * 12),
             )

@@ -44,7 +44,7 @@ class CommonServiceWidget extends StatelessWidget {
             ),
             Text(
               title,
-              style: Theme.of(context).textTheme.bodyText1!.copyWith(
+              style: Theme.of(context).textTheme.bodySmall!.copyWith(
                   fontSize: AppConsts.commonFontSizeFactor * 13,
                   fontWeight: FontWeight.w400),
             ),

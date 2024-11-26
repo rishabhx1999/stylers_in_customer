@@ -27,7 +27,7 @@ class HomeScreen extends StatelessWidget {
     SystemChrome.setSystemUIOverlayStyle(
         SystemUiOverlayStyle.dark.copyWith(statusBarColor: Colors.transparent));
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: AppColors.appBackgroundColor,
       appBar: HomeAppBar(
         leadingIconCallback: () {
           Scaffold.of(context).openDrawer();
@@ -125,7 +125,7 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Text(
                     'services'.tr,
-                    style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
                         fontWeight: FontWeight.w600,
                         color: Colors.black,
                         fontSize: AppConsts.commonFontSizeFactor * 14),
@@ -142,7 +142,7 @@ class HomeScreen extends StatelessWidget {
                           'show_all'.tr,
                           style: Theme.of(context)
                               .textTheme
-                              .headline5!
+                              .headlineSmall!
                               .copyWith(
                                   fontSize: AppConsts.commonFontSizeFactor * 12,
                                   color: AppColors.kPrimaryColor,
@@ -210,7 +210,7 @@ class HomeScreen extends StatelessWidget {
                           'no_services'.tr,
                           style: Theme.of(context)
                               .textTheme
-                              .headline5
+                              .headlineSmall
                               ?.copyWith(
                                   fontSize: AppConsts.commonFontSizeFactor * 12,
                                   color: Colors.black),
@@ -229,7 +229,7 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.only(left: 20.0),
               child: Text(
                 'popular_stylists'.tr,
-                style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                style: Theme.of(context).textTheme.bodySmall?.copyWith(
                     fontWeight: FontWeight.w600,
                     fontSize: AppConsts.commonFontSizeFactor * 14,
                     color: Colors.black),
@@ -285,7 +285,7 @@ class HomeScreen extends StatelessWidget {
                           'no_stylists'.tr,
                           style: Theme.of(context)
                               .textTheme
-                              .headline5
+                              .headlineSmall
                               ?.copyWith(
                                   fontSize: AppConsts.commonFontSizeFactor * 12,
                                   color: Colors.black),
@@ -317,8 +317,9 @@ class HomeScreen extends StatelessWidget {
                         'see_more'.tr,
                         style: Theme.of(context)
                             .textTheme
-                            .headline6
-                            ?.copyWith(color: AppColors.kPrimaryColor),
+                            .headlineSmall
+                            ?.copyWith(color: AppColors.kPrimaryColor,fontSize: AppConsts.commonFontSizeFactor * 12,
+                          fontWeight: FontWeight.w500,),
                       )),
                 ),
               ),
@@ -334,7 +335,7 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Text(
                     'popular_shops'.tr,
-                    style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                    style: Theme.of(context).textTheme.bodySmall?.copyWith(
                         fontWeight: FontWeight.w600,
                         fontSize: AppConsts.commonFontSizeFactor * 14),
                   ),
@@ -349,7 +350,7 @@ class HomeScreen extends StatelessWidget {
                           "show_all".tr,
                           style: Theme.of(context)
                               .textTheme
-                              .headline5
+                              .headlineSmall
                               ?.copyWith(
                                   fontSize: AppConsts.commonFontSizeFactor * 12,
                                   color: AppColors.kPrimaryColor,
@@ -437,7 +438,7 @@ class HomeScreen extends StatelessWidget {
                           'no_shops'.tr,
                           style: Theme.of(context)
                               .textTheme
-                              .headline5
+                              .headlineSmall
                               ?.copyWith(
                                   fontSize: AppConsts.commonFontSizeFactor * 12,
                                   color: Colors.black),

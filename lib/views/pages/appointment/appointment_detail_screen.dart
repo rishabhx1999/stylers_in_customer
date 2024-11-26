@@ -274,7 +274,7 @@ class AppointmentDetailScreen extends StatelessWidget {
                                               .customerName.value,
                                           style: Theme.of(context)
                                               .textTheme
-                                              .headline5
+                                              .headlineSmall
                                               ?.copyWith(
                                                   color: AppColors.color_6C,
                                                   fontSize: AppConsts
@@ -293,8 +293,14 @@ class AppointmentDetailScreen extends StatelessWidget {
                                         'slots_booked'.tr,
                                         style: Theme.of(context)
                                             .textTheme
-                                            .headline6
-                                            ?.copyWith(color: Colors.black),
+                                            .headlineSmall
+                                            ?.copyWith(
+                                              color: Colors.black,
+                                              fontSize: AppConsts
+                                                      .commonFontSizeFactor *
+                                                  12,
+                                              fontWeight: FontWeight.w500,
+                                            ),
                                       ),
                                       const SizedBox(
                                         height: 5.0,
@@ -303,7 +309,7 @@ class AppointmentDetailScreen extends StatelessWidget {
                                         'x1',
                                         style: Theme.of(context)
                                             .textTheme
-                                            .headline5
+                                            .headlineSmall
                                             ?.copyWith(
                                                 color: AppColors.color_6C,
                                                 fontSize: AppConsts
@@ -320,8 +326,14 @@ class AppointmentDetailScreen extends StatelessWidget {
                                         'total'.tr,
                                         style: Theme.of(context)
                                             .textTheme
-                                            .headline6
-                                            ?.copyWith(color: Colors.black),
+                                            .headlineSmall
+                                            ?.copyWith(
+                                              color: Colors.black,
+                                              fontSize: AppConsts
+                                                      .commonFontSizeFactor *
+                                                  12,
+                                              fontWeight: FontWeight.w500,
+                                            ),
                                       ),
                                       const SizedBox(
                                         height: 5.0,
@@ -331,7 +343,7 @@ class AppointmentDetailScreen extends StatelessWidget {
                                           '\$${_appointmentDetailController.totalPrice.value}',
                                           style: Theme.of(context)
                                               .textTheme
-                                              .bodyText1
+                                              .bodySmall
                                               ?.copyWith(
                                                   fontWeight: FontWeight.w600,
                                                   color: Colors.black,
@@ -359,8 +371,13 @@ class AppointmentDetailScreen extends StatelessWidget {
                                       'note'.tr,
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headline4
-                                          ?.copyWith(color: Colors.black),
+                                          .headlineMedium
+                                          ?.copyWith(
+                                            color: Colors.black,
+                                            fontSize:
+                                                AppConsts.commonFontSizeFactor *
+                                                    18,
+                                          ),
                                     ),
                                     const SizedBox(
                                       height: 4.0,
@@ -370,7 +387,7 @@ class AppointmentDetailScreen extends StatelessWidget {
                                           .appointmentNote.value,
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headline5
+                                          .headlineSmall
                                           ?.copyWith(
                                               color: AppColors.color_6C,
                                               fontSize: AppConsts
@@ -388,8 +405,12 @@ class AppointmentDetailScreen extends StatelessWidget {
                               'time'.tr,
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline4
-                                  ?.copyWith(color: Colors.black),
+                                  .headlineMedium
+                                  ?.copyWith(
+                                    color: Colors.black,
+                                    fontSize:
+                                        AppConsts.commonFontSizeFactor * 18,
+                                  ),
                             ),
                             const SizedBox(
                               height: 11.0,
@@ -411,8 +432,14 @@ class AppointmentDetailScreen extends StatelessWidget {
                                           .timeSlot.value,
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headline6
-                                          ?.copyWith(color: Colors.white),
+                                          .headlineSmall
+                                          ?.copyWith(
+                                            color: Colors.white,
+                                            fontSize:
+                                                AppConsts.commonFontSizeFactor *
+                                                    12,
+                                            fontWeight: FontWeight.w500,
+                                          ),
                                     ),
                                   )),
                                 ),
@@ -428,13 +455,14 @@ class AppointmentDetailScreen extends StatelessWidget {
                                         : '${DateFormat('EEEE').format(_appointmentDetailController.appointmentDate.value!)}, ${DateFormat("dd MMMM yyyy").format(_appointmentDetailController.appointmentDate.value!)}',
                                     style: Theme.of(context)
                                         .textTheme
-                                        .subtitle1
+                                        .bodySmall
                                         ?.copyWith(
-                                            color:
-                                                Colors.black.withOpacity(0.4),
-                                            fontSize:
-                                                AppConsts.commonFontSizeFactor *
-                                                    12),
+                                          color: Colors.black.withOpacity(0.4),
+                                          fontSize:
+                                              AppConsts.commonFontSizeFactor *
+                                                  12,
+                                          fontWeight: FontWeight.w300,
+                                        ),
                                   ),
                                 ),
                               ],
@@ -458,8 +486,13 @@ class AppointmentDetailScreen extends StatelessWidget {
                                           'remind_me'.tr,
                                           style: Theme.of(context)
                                               .textTheme
-                                              .headline4
-                                              ?.copyWith(color: Colors.black),
+                                              .headlineMedium
+                                              ?.copyWith(
+                                                color: Colors.black,
+                                                fontSize: AppConsts
+                                                        .commonFontSizeFactor *
+                                                    18,
+                                              ),
                                         ),
                                         const SizedBox(
                                           width: 5.0,
@@ -491,7 +524,7 @@ class AppointmentDetailScreen extends StatelessWidget {
                                               .remindMeTime.value,
                                           style: Theme.of(context)
                                               .textTheme
-                                              .headline5
+                                              .headlineSmall
                                               ?.copyWith(
                                                   color: AppColors.color_6C,
                                                   fontSize: AppConsts
@@ -519,8 +552,13 @@ class AppointmentDetailScreen extends StatelessWidget {
                                       'location'.tr,
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headline4
-                                          ?.copyWith(color: Colors.black),
+                                          .headlineMedium
+                                          ?.copyWith(
+                                            color: Colors.black,
+                                            fontSize:
+                                                AppConsts.commonFontSizeFactor *
+                                                    18,
+                                          ),
                                     ),
                                     const SizedBox(
                                       height: 11.0,
@@ -573,8 +611,13 @@ class AppointmentDetailScreen extends StatelessWidget {
                                       'stylist'.tr,
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headline4
-                                          ?.copyWith(color: Colors.black),
+                                          .headlineMedium
+                                          ?.copyWith(
+                                            color: Colors.black,
+                                            fontSize:
+                                                AppConsts.commonFontSizeFactor *
+                                                    18,
+                                          ),
                                     ),
                                     const SizedBox(
                                       height: 11.0,
@@ -607,15 +650,20 @@ class AppointmentDetailScreen extends StatelessWidget {
                                                   .stylistName.value,
                                               style: Theme.of(context)
                                                   .textTheme
-                                                  .headline6
+                                                  .headlineSmall
                                                   ?.copyWith(
-                                                      color: Colors.black),
+                                                    color: Colors.black,
+                                                    fontSize: AppConsts
+                                                            .commonFontSizeFactor *
+                                                        12,
+                                                    fontWeight: FontWeight.w500,
+                                                  ),
                                             ),
                                             Text(
                                               'Hair Stylist ',
                                               style: Theme.of(context)
                                                   .textTheme
-                                                  .headline5
+                                                  .headlineMedium
                                                   ?.copyWith(
                                                       color: Colors.black
                                                           .withOpacity(0.6),

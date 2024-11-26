@@ -50,7 +50,7 @@ class ServiceWidget extends StatelessWidget {
                 service.name??'',
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                style: Theme.of(context).textTheme.bodySmall!.copyWith(
                     fontSize: AppConsts.commonFontSizeFactor * 12,
                     fontWeight: FontWeight.w400),
               ),

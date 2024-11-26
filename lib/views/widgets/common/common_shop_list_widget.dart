@@ -55,7 +55,7 @@ class CommonShopListWidget extends StatelessWidget {
                           shopOwner.name ?? '',
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
-                          style: Theme.of(context).textTheme.headline6,
+                          style: Theme.of(context).textTheme.headlineLarge?.copyWith(fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                         ),
                       ),
                       SizedBox(
@@ -83,7 +83,7 @@ class CommonShopListWidget extends StatelessWidget {
                     'Hair Stylist',
                     maxLines: 2,
                     overflow: TextOverflow.fade,
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodySmall!.copyWith(
                         fontSize: AppConsts.commonFontSizeFactor * 12,
                         fontWeight: FontWeight.w400,
                         color: const Color(0x99000000)),
@@ -104,7 +104,7 @@ class CommonShopListWidget extends StatelessWidget {
                       Text('Location, of the, stylist.',
                           style: Theme.of(context)
                               .textTheme
-                              .headline5
+                              .headlineSmall
                               ?.copyWith(
                                 fontSize: AppConsts.commonFontSizeFactor * 12,
                                 fontWeight: FontWeight.w400,
@@ -114,10 +114,10 @@ class CommonShopListWidget extends StatelessWidget {
                       Text(r"$$",
                           style: Theme.of(context)
                               .textTheme
-                              .headline6
+                              .headlineSmall
                               ?.copyWith(
                                 fontSize: AppConsts.commonFontSizeFactor * 14,
-                                color: AppColors.kPrimaryDarkColor,
+                                color: AppColors.kPrimaryDarkColor,fontWeight: FontWeight.w500,
                               )),
                     ],
                   )

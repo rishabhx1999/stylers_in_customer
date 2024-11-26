@@ -61,8 +61,8 @@ class SingleDayAppointmentsWidget extends StatelessWidget {
                   currentDay(true),
                   style: Theme.of(context)
                       .textTheme
-                      .headline4
-                      ?.copyWith(color: AppColors.kPrimaryColor),
+                      .headlineMedium
+                      ?.copyWith(color: AppColors.kPrimaryColor,fontSize: AppConsts.commonFontSizeFactor * 18,),
                 ),
               ),
               const SizedBox(
@@ -71,9 +71,10 @@ class SingleDayAppointmentsWidget extends StatelessWidget {
               Obx(
                 () => Text(
                   currentDay(false),
-                  style: Theme.of(context).textTheme.subtitle1?.copyWith(
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
                       color: Colors.black.withOpacity(0.4),
-                      fontSize: AppConsts.commonFontSizeFactor * 12),
+                      fontSize: AppConsts.commonFontSizeFactor * 12,
+                    fontWeight: FontWeight.w300,),
                 ),
               ),
             ],
@@ -111,7 +112,7 @@ class SingleDayAppointmentsWidget extends StatelessWidget {
                           Text(
                             'no_schedule'.tr,
                             style:
-                                Theme.of(context).textTheme.headline5?.copyWith(
+                                Theme.of(context).textTheme.headlineSmall?.copyWith(
                                       color: Colors.black,
                                     ),
                           ),

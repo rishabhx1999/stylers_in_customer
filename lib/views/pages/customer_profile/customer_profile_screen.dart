@@ -53,11 +53,11 @@ class CustomerProfileScreen extends StatelessWidget {
     SystemChrome.setSystemUIOverlayStyle(
         SystemUiOverlayStyle.dark.copyWith(statusBarColor: Colors.transparent));
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: AppColors.appBackgroundColor,
       appBar: AppBar(
         title: Text(
           'your_profile'.tr,
-          style: Theme.of(context).textTheme.headline4?.copyWith(
+          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
               color: Colors.black,
               fontSize: AppConsts.commonFontSizeFactor * 16),
         ),
@@ -103,7 +103,7 @@ class CustomerProfileScreen extends StatelessWidget {
                               _customerProfileController.mCustomerName.value,
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline3
+                                  .headlineMedium
                                   ?.copyWith(color: Colors.black),
                             ),
                             const SizedBox(
@@ -118,7 +118,7 @@ class CustomerProfileScreen extends StatelessWidget {
                                     : '@${_customerProfileController.mCustomerUsername.value}',
                                 style: Theme.of(context)
                                     .textTheme
-                                    .headline5
+                                    .headlineSmall
                                     ?.copyWith(
                                         color: Colors.black.withOpacity(
                                           0.5,
@@ -145,7 +145,7 @@ class CustomerProfileScreen extends StatelessWidget {
                               textAlign: TextAlign.center,
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline5
+                                  .headlineSmall
                                   ?.copyWith(
                                       color: AppColors.color_29,
                                       fontSize:
@@ -183,13 +183,13 @@ class CustomerProfileScreen extends StatelessWidget {
                     //                     '0',
                     //                     style: Theme.of(context)
                     //                         .textTheme
-                    //                         .headline6
+                    //                         .headlineSmall
                     //                         ?.copyWith(
                     //                             color:
                     //                                 AppColors.kPrimaryDarkColor,
                     //                             fontSize: AppConsts
                     //                                     .commonFontSizeFactor *
-                    //                                 12),
+                    //                                 12),fontWeight: FontWeight.w500,
                     //                   ),
                     //                   Text(
                     //                     'followers'.tr,

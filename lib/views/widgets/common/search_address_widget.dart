@@ -32,7 +32,7 @@ class SearchAddressWidget extends StatelessWidget {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12.0),
-              child: Text(place.description??"",style: Theme.of(context).textTheme.headline5?.copyWith(
+              child: Text(place.description??"",style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                 fontSize: AppConsts.commonFontSizeFactor *15,
                 color: AppColors.color_8A
               ),),

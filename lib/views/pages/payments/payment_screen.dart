@@ -21,11 +21,11 @@ class PaymentScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: AppColors.appBackgroundColor,
       appBar: AppBar(
         title: Text(
           'payment_methods'.tr,
-          style: Theme.of(context).textTheme.headline4?.copyWith(
+          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
               color: Colors.black,
               fontSize: AppConsts.commonFontSizeFactor * 16),
         ),
@@ -48,8 +48,8 @@ class PaymentScreen extends StatelessWidget {
                 'choose_a_payment_method'.tr,
                 style: Theme.of(context)
                     .textTheme
-                    .headline4
-                    ?.copyWith(color: Colors.black),
+                    .headlineMedium
+                    ?.copyWith(color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 18,),
               ),
               const SizedBox(
                 height: 26.0,
@@ -105,8 +105,8 @@ class PaymentScreen extends StatelessWidget {
                 'card_details'.tr,
                 style: Theme.of(context)
                     .textTheme
-                    .headline4
-                    ?.copyWith(color: Colors.black),
+                    .headlineMedium
+                    ?.copyWith(color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 18,),
               ),
               const SizedBox(
                 height: 13.0,
@@ -115,8 +115,8 @@ class PaymentScreen extends StatelessWidget {
                 'card_number'.tr,
                 style: Theme.of(context)
                     .textTheme
-                    .headline6
-                    ?.copyWith(color: Colors.black),
+                    .headlineSmall
+                    ?.copyWith(color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
               ),
               const SizedBox(
                 height: 9.0,
@@ -141,8 +141,8 @@ class PaymentScreen extends StatelessWidget {
                 'name'.tr,
                 style: Theme.of(context)
                     .textTheme
-                    .headline6
-                    ?.copyWith(color: Colors.black),
+                    .headlineSmall
+                    ?.copyWith(color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
               ),
               const SizedBox(
                 height: 9.0,
@@ -172,8 +172,8 @@ class PaymentScreen extends StatelessWidget {
                         'expiry_date'.tr,
                         style: Theme.of(context)
                             .textTheme
-                            .headline6
-                            ?.copyWith(color: Colors.black),
+                            .headlineSmall
+                            ?.copyWith(color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                       ),
                       const SizedBox(
                         height: 9.0,
@@ -213,8 +213,8 @@ class PaymentScreen extends StatelessWidget {
                         'cvc_number'.tr,
                         style: Theme.of(context)
                             .textTheme
-                            .headline6
-                            ?.copyWith(color: Colors.black),
+                            .headlineSmall
+                            ?.copyWith(color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                       ),
                       const SizedBox(
                         height: 9.0,

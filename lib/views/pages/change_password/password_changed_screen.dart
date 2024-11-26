@@ -5,6 +5,7 @@ import 'package:stylers_in_customer/consts/app_consts.dart';
 import 'package:stylers_in_customer/consts/app_icons.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../../../config/app_colors.dart';
 import '../../widgets/common/common_button.dart';
 
 class PasswordChangedScreen extends StatelessWidget {
@@ -13,7 +14,7 @@ class PasswordChangedScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: AppColors.appBackgroundColor,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -30,7 +31,7 @@ class PasswordChangedScreen extends StatelessWidget {
             'password_has_been_updated'.tr,
             style: Theme.of(context)
                 .textTheme
-                .headline3
+                .headlineMedium
                 ?.copyWith(color: Colors.black),
           ),
           const SizedBox(
@@ -40,7 +41,7 @@ class PasswordChangedScreen extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 40.0),
             child: Text(
               'password_changed_message'.tr,
-              style: Theme.of(context).textTheme.headline5?.copyWith(
+              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                   color: Colors.black.withOpacity(0.4),
                   fontSize: AppConsts.commonFontSizeFactor * 12),
             ),

@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:stylers_in_customer/config/app_routes.dart';
 import 'package:stylers_in_customer/consts/app_consts.dart';
 import 'package:stylers_in_customer/consts/app_icons.dart';
-import 'package:stylers_in_customer/controller/search/search_controller.dart';
+import 'package:stylers_in_customer/controller/search/search_controller.dart' as search;
 import 'package:stylers_in_customer/utils/enums/search_cell_type.dart';
 import '../../../model/search/search_res_model.dart';
 import '../../widgets/common/chip_widget.dart';
@@ -15,7 +15,7 @@ import '../../widgets/common/common_shop_list_widget.dart';
 import '../../widgets/common/stylist_widget_search.dart';
 
 class SearchScreen extends StatelessWidget {
-  final _searchController = Get.put(SearchController());
+  final _searchController = Get.put(search.SearchController());
 
   SearchScreen({Key? key}) : super(key: key);
 
@@ -219,7 +219,7 @@ class SearchScreen extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8),
       child: Text(
         title,
-        style: Theme.of(context).textTheme.headline4?.copyWith(
+        style: Theme.of(context).textTheme.headlineMedium?.copyWith(
             fontSize: AppConsts.commonFontSizeFactor * 18, color: Colors.black),
       ),
     );

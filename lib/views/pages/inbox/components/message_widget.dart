@@ -30,7 +30,7 @@ class MessageWidget extends StatelessWidget {
                     children: [
                       Text(
                         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
-                        style: Theme.of(context).textTheme.headline5?.copyWith(
+                        style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                             color: Colors.white,
                             fontSize: AppConsts.commonFontSizeFactor * 12),
                       ),
@@ -41,7 +41,7 @@ class MessageWidget extends StatelessWidget {
                             '12:23',
                             style: Theme.of(context)
                                 .textTheme
-                                .headline5
+                                .headlineSmall
                                 ?.copyWith(
                                     color: Colors.white.withOpacity(0.6),
                                     fontSize:
@@ -89,7 +89,7 @@ class MessageWidget extends StatelessWidget {
                     children: [
                       Text(
                         'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-                        style: Theme.of(context).textTheme.headline5?.copyWith(
+                        style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                             color: Colors.black,
                             fontSize: AppConsts.commonFontSizeFactor * 12),
                       ),
@@ -100,7 +100,7 @@ class MessageWidget extends StatelessWidget {
                             '12:23',
                             style: Theme.of(context)
                                 .textTheme
-                                .headline5
+                                .headlineSmall
                                 ?.copyWith(
                                     color: Colors.black.withOpacity(0.6),
                                     fontSize:

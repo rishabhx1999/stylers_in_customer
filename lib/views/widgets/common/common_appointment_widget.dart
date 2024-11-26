@@ -63,7 +63,7 @@ class CommonAppointmentWidget extends StatelessWidget {
                         appointmentData.service == null
                             ? ''
                             : appointmentData.service!.name ?? '',
-                        style: Theme.of(context).textTheme.headline5?.copyWith(
+                        style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                               color: Colors.black,
                             ),
                       ),
@@ -88,7 +88,7 @@ class CommonAppointmentWidget extends StatelessWidget {
                                 : appointmentData.bookedUser!.name ?? '',
                             style: Theme.of(context)
                                 .textTheme
-                                .headline5
+                                .headlineSmall
                                 ?.copyWith(
                                   fontSize: AppConsts.commonFontSizeFactor * 12,
                                   color: Colors.black.withOpacity(0.56),
@@ -116,7 +116,7 @@ class CommonAppointmentWidget extends StatelessWidget {
                                     appointmentData.timeslot!.endTime),
                             style: Theme.of(context)
                                 .textTheme
-                                .headline5
+                                .headlineSmall
                                 ?.copyWith(
                                   fontSize: AppConsts.commonFontSizeFactor * 12,
                                   color: Colors.black.withOpacity(0.56),
@@ -143,7 +143,7 @@ class CommonAppointmentWidget extends StatelessWidget {
                                 : '${appointmentData.bookedUser!.address1}, ${appointmentData.bookedUser!.address2}',
                             style: Theme.of(context)
                                 .textTheme
-                                .headline5
+                                .headlineSmall
                                 ?.copyWith(
                                   fontSize: AppConsts.commonFontSizeFactor * 12,
                                   color: Colors.black.withOpacity(0.56),

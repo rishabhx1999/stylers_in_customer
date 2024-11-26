@@ -34,7 +34,7 @@ class SendAppointmentScreen extends StatelessWidget {
     SystemChrome.setSystemUIOverlayStyle(
         SystemUiOverlayStyle.dark.copyWith(statusBarColor: Colors.transparent));
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: AppColors.appBackgroundColor,
       appBar: AppBar(
         systemOverlayStyle: Theme.of(context).appBarTheme.systemOverlayStyle,
         title: Obx(
@@ -42,7 +42,7 @@ class SendAppointmentScreen extends StatelessWidget {
             _createAppointmentController.isEditAppointment.value
                 ? 'edit_appointment'.tr
                 : 'send_appointment_offer'.tr,
-            style: Theme.of(context).textTheme.headline4?.copyWith(
+            style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                 color: Colors.black,
                 fontSize: AppConsts.commonFontSizeFactor * 16),
           ),
@@ -73,8 +73,9 @@ class SendAppointmentScreen extends StatelessWidget {
                         'service'.tr,
                         style: Theme.of(context)
                             .textTheme
-                            .headline6
-                            ?.copyWith(color: Colors.black),
+                            .headlineSmall
+                            ?.copyWith(color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 12,
+                          fontWeight: FontWeight.w500,),
                       ),
                       const SizedBox(
                         height: 7.0,
@@ -92,7 +93,7 @@ class SendAppointmentScreen extends StatelessWidget {
                                       service.name ?? '',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headline5
+                                          .headlineSmall
                                           ?.copyWith(
                                               color: Colors.black,
                                               fontSize: AppConsts
@@ -119,7 +120,7 @@ class SendAppointmentScreen extends StatelessWidget {
                                 'select_service'.tr,
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText1
+                                    .bodySmall
                                     ?.copyWith(
                                         color: Colors.red,
                                         fontSize:
@@ -137,8 +138,9 @@ class SendAppointmentScreen extends StatelessWidget {
                         'sub_service'.tr,
                         style: Theme.of(context)
                             .textTheme
-                            .headline6
-                            ?.copyWith(color: Colors.black),
+                            .headlineSmall
+                            ?.copyWith(color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 12,
+                          fontWeight: FontWeight.w500,),
                       ),
                       const SizedBox(
                         height: 7.0,
@@ -156,7 +158,7 @@ class SendAppointmentScreen extends StatelessWidget {
                                       subService.name ?? '',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headline5
+                                          .headlineSmall
                                           ?.copyWith(
                                               color: Colors.black,
                                               fontSize: AppConsts
@@ -184,7 +186,7 @@ class SendAppointmentScreen extends StatelessWidget {
                                 'select_sub_service'.tr,
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText1
+                                    .bodySmall
                                     ?.copyWith(
                                         color: Colors.red,
                                         fontSize:
@@ -202,8 +204,8 @@ class SendAppointmentScreen extends StatelessWidget {
                         'add_note'.tr,
                         style: Theme.of(context)
                             .textTheme
-                            .headline6
-                            ?.copyWith(color: Colors.black),
+                            .headlineSmall
+                            ?.copyWith(color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                       ),
                       const SizedBox(
                         height: 7.0,
@@ -227,8 +229,8 @@ class SendAppointmentScreen extends StatelessWidget {
                         'select_date'.tr,
                         style: Theme.of(context)
                             .textTheme
-                            .headline6
-                            ?.copyWith(color: Colors.black),
+                            .headlineSmall
+                            ?.copyWith(color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                       ),
                       const SizedBox(
                         height: 7.0,
@@ -275,7 +277,7 @@ class SendAppointmentScreen extends StatelessWidget {
                                           .selectedCalendarDate.value),
                                   style: Theme.of(context)
                                       .textTheme
-                                      .headline5
+                                      .headlineSmall
                                       ?.copyWith(color: Colors.black),
                                 ),
                               ),
@@ -299,7 +301,7 @@ class SendAppointmentScreen extends StatelessWidget {
                                 'no_free_slots_message'.tr,
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText1
+                                    .bodySmall
                                     ?.copyWith(
                                         color: Colors.red,
                                         fontSize:
@@ -324,8 +326,8 @@ class SendAppointmentScreen extends StatelessWidget {
                                 'select_timeslot'.tr,
                                 style: Theme.of(context)
                                     .textTheme
-                                    .headline6
-                                    ?.copyWith(color: Colors.black),
+                                    .headlineSmall
+                                    ?.copyWith(color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                               ),
                               const SizedBox(
                                 height: 7.0,
@@ -375,7 +377,7 @@ class SendAppointmentScreen extends StatelessWidget {
                                                             style: Theme.of(
                                                                     context)
                                                                 .textTheme
-                                                                .headline6
+                                                                .headlineSmall
                                                                 ?.copyWith(
                                                                     color: _createAppointmentController
                                                                                 .selectedTimeSlot.value ==
@@ -383,7 +385,7 @@ class SendAppointmentScreen extends StatelessWidget {
                                                                         ? Colors
                                                                             .white
                                                                         : AppColors
-                                                                            .kPrimaryColor),
+                                                                            .kPrimaryColor,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                                                           )),
                                                         ),
                                                         const SizedBox(
@@ -416,7 +418,7 @@ class SendAppointmentScreen extends StatelessWidget {
                                         'select_timeslot'.tr,
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1
+                                            .bodySmall
                                             ?.copyWith(
                                                 color: Colors.red,
                                                 fontSize: AppConsts
@@ -468,8 +470,8 @@ class SendAppointmentScreen extends StatelessWidget {
                             'remind_me'.tr,
                             style: Theme.of(context)
                                 .textTheme
-                                .headline6
-                                ?.copyWith(color: Colors.black),
+                                .headlineSmall
+                                ?.copyWith(color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                           ),
                           const SizedBox(
                             width: 5.0,
@@ -503,7 +505,7 @@ class SendAppointmentScreen extends StatelessWidget {
                                           remindTime.displayString,
                                           style: Theme.of(context)
                                               .textTheme
-                                              .headline5
+                                              .headlineSmall
                                               ?.copyWith(
                                                   color: AppColors.color_6C,
                                                   fontSize: AppConsts
@@ -562,8 +564,8 @@ class SendAppointmentScreen extends StatelessWidget {
                                       'add_location_required'.tr,
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headline6
-                                          ?.copyWith(color: Colors.black),
+                                          .headlineSmall
+                                          ?.copyWith(color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                                     ),
                                   ]),
                               Obx(() => _createAppointmentController
@@ -688,7 +690,7 @@ class SendAppointmentScreen extends StatelessWidget {
                                                             style: Theme.of(
                                                                     context)
                                                                 .textTheme
-                                                                .headline5
+                                                                .headlineSmall
                                                                 ?.copyWith(
                                                                     color: AppColors
                                                                         .color_6C,
@@ -720,7 +722,7 @@ class SendAppointmentScreen extends StatelessWidget {
                                         'add_location'.tr,
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText1
+                                            .bodySmall
                                             ?.copyWith(
                                                 color: Colors.red,
                                                 fontSize: AppConsts
@@ -771,10 +773,10 @@ class SendAppointmentScreen extends StatelessWidget {
                                           'name'.tr,
                                           style: Theme.of(context)
                                               .textTheme
-                                              .headline6
+                                              .headlineSmall
                                               ?.copyWith(
                                                   color:
-                                                      AppColors.kPrimaryColor),
+                                                      AppColors.kPrimaryColor,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                                         ),
                                         const SizedBox(
                                           height: 5.0,
@@ -784,7 +786,7 @@ class SendAppointmentScreen extends StatelessWidget {
                                               .customerName.value,
                                           style: Theme.of(context)
                                               .textTheme
-                                              .headline5
+                                              .headlineSmall
                                               ?.copyWith(
                                                   color: Colors.black,
                                                   fontSize: AppConsts
@@ -803,10 +805,10 @@ class SendAppointmentScreen extends StatelessWidget {
                                           'slots_booked'.tr,
                                           style: Theme.of(context)
                                               .textTheme
-                                              .headline6
+                                              .headlineSmall
                                               ?.copyWith(
                                                   color:
-                                                      AppColors.kPrimaryColor),
+                                                      AppColors.kPrimaryColor,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                                         ),
                                         const SizedBox(
                                           height: 5.0,
@@ -815,7 +817,7 @@ class SendAppointmentScreen extends StatelessWidget {
                                           'x1',
                                           style: Theme.of(context)
                                               .textTheme
-                                              .headline5
+                                              .headlineSmall
                                               ?.copyWith(
                                                   color: Colors.black,
                                                   fontSize: AppConsts
@@ -834,10 +836,10 @@ class SendAppointmentScreen extends StatelessWidget {
                                           'total'.tr,
                                           style: Theme.of(context)
                                               .textTheme
-                                              .headline6
+                                              .headlineSmall
                                               ?.copyWith(
                                                   color:
-                                                      AppColors.kPrimaryColor),
+                                                      AppColors.kPrimaryColor,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                                         ),
                                         const SizedBox(
                                           height: 5.0,
@@ -846,7 +848,7 @@ class SendAppointmentScreen extends StatelessWidget {
                                           '\$${_createAppointmentController.selectedSubService.value == null ? '' : _createAppointmentController.selectedSubService.value!.serviceRate ?? ''}',
                                           style: Theme.of(context)
                                               .textTheme
-                                              .bodyText1
+                                              .bodySmall
                                               ?.copyWith(
                                                   fontWeight: FontWeight.w600,
                                                   color: Colors.black,

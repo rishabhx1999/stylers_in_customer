@@ -38,7 +38,7 @@ class ForgotPasswordScreen extends StatelessWidget {
               padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 8),
               child: Text(
                 'enter_your_email_address'.tr,
-                style: Theme.of(context).textTheme.headline5?.copyWith(
+                style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                     color: AppColors.textColorPrimary,
                     fontSize: AppConsts.commonFontSizeFactor * 22),
               ),
@@ -47,7 +47,7 @@ class ForgotPasswordScreen extends StatelessWidget {
               padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 8),
               child: Text(
                 'forgot_password_subtitle'.tr,
-                style: Theme.of(context).textTheme.headline5?.copyWith(
+                style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                     color: Colors.black.withOpacity(0.6),
                     fontSize: AppConsts.commonFontSizeFactor * 14),
               ),
@@ -56,7 +56,7 @@ class ForgotPasswordScreen extends StatelessWidget {
               padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 32),
               child: Text(
                 'Email',
-                style: Theme.of(context).textTheme.headline4?.copyWith(
+                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                     color: Colors.black,
                     fontSize: AppConsts.commonFontSizeFactor * 12),
               ),

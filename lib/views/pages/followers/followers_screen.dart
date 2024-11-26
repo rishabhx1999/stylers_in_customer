@@ -5,6 +5,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:stylers_in_customer/consts/app_icons.dart';
 import 'package:stylers_in_customer/consts/app_consts.dart';
 
+import '../../../config/app_colors.dart';
 import '../../widgets/common/follower_widget.dart';
 import '../../widgets/common/follower_widget_shimmer.dart';
 
@@ -16,14 +17,14 @@ class FollowersScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: AppColors.appBackgroundColor,
       appBar: AppBar(
         title: Obx(
           () => Text(
             _followersController.isFromCustomerProfile.value
                 ? 'my_followers'.tr
                 : 'followers'.tr,
-            style: Theme.of(context).textTheme.headline4?.copyWith(
+            style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                 color: Colors.black,
                 fontSize: AppConsts.commonFontSizeFactor * 16),
           ),

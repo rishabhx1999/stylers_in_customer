@@ -53,12 +53,12 @@ class ProfileDetailScreen extends StatelessWidget {
     SystemChrome.setSystemUIOverlayStyle(
         SystemUiOverlayStyle.dark.copyWith(statusBarColor: Colors.transparent));
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: AppColors.appBackgroundColor,
       appBar: AppBar(
         systemOverlayStyle: Theme.of(context).appBarTheme.systemOverlayStyle,
         title: Text(
           'profile'.tr,
-          style: Theme.of(context).textTheme.headline4?.copyWith(
+          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
               color: Colors.black,
               fontSize: AppConsts.commonFontSizeFactor * 16),
         ),
@@ -107,7 +107,7 @@ class ProfileDetailScreen extends StatelessWidget {
                                   _profileDetailController.mProviderName.value,
                                   style: Theme.of(context)
                                       .textTheme
-                                      .headline3
+                                      .headlineMedium
                                       ?.copyWith(color: Colors.black),
                                 ),
                                 const SizedBox(
@@ -118,7 +118,7 @@ class ProfileDetailScreen extends StatelessWidget {
                                     '@${_profileDetailController.mProviderUsername.value}',
                                     style: Theme.of(context)
                                         .textTheme
-                                        .headline5
+                                        .headlineSmall
                                         ?.copyWith(
                                             color: Colors.black.withOpacity(
                                               0.5,
@@ -159,7 +159,7 @@ class ProfileDetailScreen extends StatelessWidget {
                                   textAlign: TextAlign.center,
                                   style: Theme.of(context)
                                       .textTheme
-                                      .headline5
+                                      .headlineSmall
                                       ?.copyWith(
                                           color: AppColors.color_29,
                                           fontSize:
@@ -218,12 +218,10 @@ class ProfileDetailScreen extends StatelessWidget {
                                       '(${_profileDetailController.mProviderAverageRating.value})',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .headline6
+                                          .headlineSmall
                                           ?.copyWith(
                                               color: Colors.black,
-                                              fontSize: AppConsts
-                                                      .commonFontSizeFactor *
-                                                  12),
+                                        fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                                     )
                                   ],
                                 ),
@@ -261,24 +259,18 @@ class ProfileDetailScreen extends StatelessWidget {
                                             '0',
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .headline6
+                                                .headlineSmall
                                                 ?.copyWith(
                                                     color: AppColors
-                                                        .kPrimaryDarkColor,
-                                                    fontSize: AppConsts
-                                                            .commonFontSizeFactor *
-                                                        12),
+                                                        .kPrimaryDarkColor,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                                           ),
                                           Text(
                                             'followers'.tr,
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .headline6
+                                                .headlineSmall
                                                 ?.copyWith(
-                                                    color: Colors.black,
-                                                    fontSize: AppConsts
-                                                            .commonFontSizeFactor *
-                                                        12),
+                                                    color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                                           )
                                         ],
                                       ),
@@ -366,7 +358,7 @@ class ProfileDetailScreen extends StatelessWidget {
                                                   .toString(),
                                               style: Theme.of(context)
                                                   .textTheme
-                                                  .headline6
+                                                  .headlineSmall
                                                   ?.copyWith(
                                                       color: AppColors
                                                           .kPrimaryDarkColor,
@@ -378,12 +370,9 @@ class ProfileDetailScreen extends StatelessWidget {
                                               'followers'.tr,
                                               style: Theme.of(context)
                                                   .textTheme
-                                                  .headline6
+                                                  .headlineSmall
                                                   ?.copyWith(
-                                                      color: Colors.black,
-                                                      fontSize: AppConsts
-                                                              .commonFontSizeFactor *
-                                                          12),
+                                                      color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                                             )
                                           ],
                                         ),
@@ -534,12 +523,12 @@ class ProfileDetailScreen extends StatelessWidget {
                                     'services'.tr,
                                     style: Theme.of(context)
                                         .textTheme
-                                        .headline6
+                                        .headlineSmall
                                         ?.copyWith(
                                             color: AppColors.kPrimaryColor,
                                             fontSize:
                                                 AppConsts.commonFontSizeFactor *
-                                                    14),
+                                                    14,fontWeight: FontWeight.w500,),
                                   ),
                                 ),
                         ),
@@ -548,7 +537,7 @@ class ProfileDetailScreen extends StatelessWidget {
                         //     'no_data_yet'.tr,
                         //     style: Theme.of(context)
                         //         .textTheme
-                        //         .headline5
+                        //         .headlineSmall
                         //         ?.copyWith(color: Colors.black),
                         //   ),
                         // ),
@@ -589,7 +578,7 @@ class ProfileDetailScreen extends StatelessWidget {
                                 'see_more'.tr,
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText1
+                                    .bodySmall
                                     ?.copyWith(
                                         color: AppColors.kPrimaryColor,
                                         fontWeight: FontWeight.w600,
@@ -607,11 +596,11 @@ class ProfileDetailScreen extends StatelessWidget {
                             'portfolio'.tr,
                             style: Theme.of(context)
                                 .textTheme
-                                .headline6
+                                .headlineSmall
                                 ?.copyWith(
                                     color: AppColors.kPrimaryColor,
                                     fontSize:
-                                        AppConsts.commonFontSizeFactor * 14),
+                                        AppConsts.commonFontSizeFactor * 14,fontWeight: FontWeight.w500,),
                           ),
                         ),
                         const SizedBox(
@@ -650,9 +639,9 @@ class ProfileDetailScreen extends StatelessWidget {
                                               '+21',
                                               style: Theme.of(context)
                                                   .textTheme
-                                                  .headline6
+                                                  .headlineSmall
                                                   ?.copyWith(
-                                                      color: Colors.white),
+                                                      color: Colors.white,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                                             ),
                                           ),
                                         ))
@@ -686,11 +675,11 @@ class ProfileDetailScreen extends StatelessWidget {
                             'reviews'.tr,
                             style: Theme.of(context)
                                 .textTheme
-                                .headline6
+                                .headlineSmall
                                 ?.copyWith(
                                     color: AppColors.kPrimaryColor,
                                     fontSize:
-                                        AppConsts.commonFontSizeFactor * 14),
+                                        AppConsts.commonFontSizeFactor * 14,fontWeight: FontWeight.w500,),
                           ),
                         ),
                         const SizedBox(
@@ -701,8 +690,9 @@ class ProfileDetailScreen extends StatelessWidget {
                           child: Text(
                             'your_review'.tr,
                             style:
-                                Theme.of(context).textTheme.subtitle1?.copyWith(
-                                      color: Colors.black.withOpacity(0.67),
+                                Theme.of(context).textTheme.bodySmall?.copyWith(
+                                      color: Colors.black.withOpacity(0.67),fontSize: AppConsts.commonFontSizeFactor * 14,
+                                  fontWeight: FontWeight.w300,
                                     ),
                           ),
                         ),
@@ -766,7 +756,7 @@ class ProfileDetailScreen extends StatelessWidget {
                                 'see_all_reviews'.tr,
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText1
+                                    .bodySmall
                                     ?.copyWith(
                                         color: AppColors.kPrimaryColor,
                                         fontWeight: FontWeight.w600,

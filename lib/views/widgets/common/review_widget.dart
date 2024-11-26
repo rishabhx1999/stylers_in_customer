@@ -14,13 +14,13 @@ class ReviewWidget extends StatelessWidget {
       children: [
         Text(
           'Ethan loyd',
-          style: Theme.of(context).textTheme.headline5?.copyWith(
+          style: Theme.of(context).textTheme.headlineSmall?.copyWith(
               color: Colors.black,
               fontSize: AppConsts.commonFontSizeFactor * 12),
         ),
         Text(
           '@ethan54',
-          style: Theme.of(context).textTheme.headline5?.copyWith(
+          style: Theme.of(context).textTheme.headlineSmall?.copyWith(
               color: Colors.black.withOpacity(0.50),
               fontSize: AppConsts.commonFontSizeFactor * 12),
         ),
@@ -46,7 +46,7 @@ class ReviewWidget extends StatelessWidget {
         ),
         Text(
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
-          style: Theme.of(context).textTheme.headline5?.copyWith(
+          style: Theme.of(context).textTheme.headlineSmall?.copyWith(
               color: Colors.black,
               fontSize: AppConsts.commonFontSizeFactor * 12),
         ),

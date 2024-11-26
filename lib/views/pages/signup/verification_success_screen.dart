@@ -21,7 +21,7 @@ class VerificationSuccessScreen extends StatelessWidget {
     SystemChrome.setSystemUIOverlayStyle(
         SystemUiOverlayStyle.dark.copyWith(statusBarColor: Colors.white));
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: AppColors.appBackgroundColor,
       // appBar: AppBar(automaticallyImplyLeading: false,),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -45,7 +45,7 @@ class VerificationSuccessScreen extends StatelessWidget {
             padding: const EdgeInsets.only(left: 16.0, right: 16, top: 24),
             child: Text(
               'congratulations'.tr,
-              style: Theme.of(context).textTheme.bodyText1?.copyWith(
+              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                   color: AppColors.textColorPrimary,
                   fontWeight: FontWeight.w600,
                   fontSize: AppConsts.commonFontSizeFactor * 22),
@@ -55,7 +55,7 @@ class VerificationSuccessScreen extends StatelessWidget {
             padding: const EdgeInsets.only(left: 16.0, right: 16, top: 8),
             child: Text(
               'your_account_has_been_created'.tr,
-              style: Theme.of(context).textTheme.headline5?.copyWith(
+              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                   color: Colors.black.withOpacity(0.6),
                   fontSize: AppConsts.commonFontSizeFactor * 14),
             ),
@@ -67,7 +67,7 @@ class VerificationSuccessScreen extends StatelessWidget {
                 text: TextSpan(children: [
               TextSpan(
                   text: 'welcome_to'.tr,
-                  style: Theme.of(context).textTheme.headline5?.copyWith(
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                       fontSize: AppConsts.commonFontSizeFactor * 26,
                       color: AppColors.textColorPrimary)),
               const WidgetSpan(
@@ -76,7 +76,7 @@ class VerificationSuccessScreen extends StatelessWidget {
               )),
               TextSpan(
                   text: 'stylersin'.tr,
-                  style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                       fontSize: AppConsts.commonFontSizeFactor * 26,
                       fontWeight: FontWeight.w600,
                       color: AppColors.kPrimaryColor),
@@ -91,7 +91,7 @@ class VerificationSuccessScreen extends StatelessWidget {
             child: Obx(
               () => Text(
                 _verificationSuccessController.name.value,
-                style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     color: AppColors.textColorPrimary,
                     fontWeight: FontWeight.w600,
                     fontSize: AppConsts.commonFontSizeFactor * 32),

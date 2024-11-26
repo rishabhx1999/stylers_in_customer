@@ -58,13 +58,13 @@ class CommonPhoneInputField extends StatelessWidget {
             controller: controller,
             style: Theme.of(context)
                 .textTheme
-                .headline5
+                .headlineSmall
                 ?.copyWith(color: Colors.black),
             keyboardType: inputType ?? TextInputType.phone,
             cursorColor: AppColors.kPrimaryDarkColor,
             decoration: InputDecoration(
                 hintText: hint.tr,
-                hintStyle: Theme.of(context).textTheme.bodyText1?.copyWith(
+                hintStyle: Theme.of(context).textTheme.bodySmall?.copyWith(
                     fontSize: AppConsts.commonFontSizeFactor * 12,
                     fontWeight: FontWeight.w300,
                     color: Colors.black.withOpacity(0.4)),
@@ -76,7 +76,7 @@ class CommonPhoneInputField extends StatelessWidget {
                 disabledBorder: inputBorder,
                 focusedBorder: inputBorder,
                 focusedErrorBorder: inputBorder,
-                errorStyle: Theme.of(context).textTheme.bodyText1?.copyWith(
+                errorStyle: Theme.of(context).textTheme.bodySmall?.copyWith(
                     fontSize: AppConsts.commonFontSizeFactor * 12,
                     fontWeight: FontWeight.w300,
                     color: Colors.red),
@@ -101,7 +101,7 @@ class CommonPhoneInputField extends StatelessWidget {
                     icon: Text(selectedCountry.value?.flagEmoji ?? ""),
                     label: Text(
                       '+${selectedCountry.value?.phoneCode ?? ''}',
-                      style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
                           fontSize: AppConsts.commonFontSizeFactor * 12,
                           color: Colors.black.withOpacity(0.4),
                           fontWeight: FontWeight.w300),

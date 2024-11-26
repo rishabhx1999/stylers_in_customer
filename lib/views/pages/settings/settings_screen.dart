@@ -16,11 +16,11 @@ class SettingsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: AppColors.appBackgroundColor,
       appBar: AppBar(
         title: Text(
           'settings'.tr,
-          style: Theme.of(context).textTheme.headline4?.copyWith(
+          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
               color: Colors.black,
               fontSize: AppConsts.commonFontSizeFactor * 16),
         ),
@@ -40,7 +40,7 @@ class SettingsScreen extends StatelessWidget {
             padding: const EdgeInsets.only(left: 34.79),
             child: Text(
               'notifications'.tr,
-              style: Theme.of(context).textTheme.bodyText1?.copyWith(
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
                   color: Colors.black,
                   fontSize: AppConsts.commonFontSizeFactor * 14.0,
                   fontWeight: FontWeight.w600),
@@ -68,7 +68,7 @@ class SettingsScreen extends StatelessWidget {
               children: [
                 Text(
                   'show_notifications'.tr,
-                  style: Theme.of(context).textTheme.headline5?.copyWith(
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                       fontSize: AppConsts.commonFontSizeFactor * 12.0,
                       color: Colors.black),
                 ),
@@ -102,7 +102,7 @@ class SettingsScreen extends StatelessWidget {
             padding: const EdgeInsets.only(left: 35.62),
             child: Text(
               'appointment_status_change_notify'.tr,
-              style: Theme.of(context).textTheme.bodyText1?.copyWith(
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
                   color: Colors.black,
                   fontSize: AppConsts.commonFontSizeFactor * 14.0,
                   fontWeight: FontWeight.w600),
@@ -130,7 +130,7 @@ class SettingsScreen extends StatelessWidget {
               children: [
                 Text(
                   'app_notification'.tr,
-                  style: Theme.of(context).textTheme.headline5?.copyWith(
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                       fontSize: AppConsts.commonFontSizeFactor * 12.0,
                       color: Colors.black),
                 ),
@@ -164,7 +164,7 @@ class SettingsScreen extends StatelessWidget {
             padding: const EdgeInsets.only(left: 35.62),
             child: Text(
               'settings'.tr,
-              style: Theme.of(context).textTheme.bodyText1?.copyWith(
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
                   color: Colors.black,
                   fontSize: AppConsts.commonFontSizeFactor * 14.0,
                   fontWeight: FontWeight.w600),
@@ -194,7 +194,7 @@ class SettingsScreen extends StatelessWidget {
                 children: [
                   Text(
                     'address'.tr,
-                    style: Theme.of(context).textTheme.headline5?.copyWith(
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                         fontSize: AppConsts.commonFontSizeFactor * 12.0,
                         color: Colors.black),
                   ),
@@ -230,7 +230,7 @@ class SettingsScreen extends StatelessWidget {
                 children: [
                   Text(
                     'language'.tr,
-                    style: Theme.of(context).textTheme.headline5?.copyWith(
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                         fontSize: AppConsts.commonFontSizeFactor * 6.64,
                         color: AppColors.color_BB),
                   ),
@@ -244,7 +244,7 @@ class SettingsScreen extends StatelessWidget {
                     children: [
                       Text(
                         'English (United States)',
-                        style: Theme.of(context).textTheme.headline5?.copyWith(
+                        style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                             fontSize: AppConsts.commonFontSizeFactor * 12.0,
                             color: Colors.black),
                       ),
@@ -282,7 +282,7 @@ class SettingsScreen extends StatelessWidget {
                 children: [
                   Text(
                     'country'.tr,
-                    style: Theme.of(context).textTheme.headline5?.copyWith(
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                         fontSize: AppConsts.commonFontSizeFactor * 6.64,
                         color: AppColors.color_BB),
                   ),
@@ -296,7 +296,7 @@ class SettingsScreen extends StatelessWidget {
                     children: [
                       Text(
                         'United States',
-                        style: Theme.of(context).textTheme.headline5?.copyWith(
+                        style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                             fontSize: AppConsts.commonFontSizeFactor * 12.0,
                             color: Colors.black),
                       ),
@@ -337,7 +337,7 @@ class SettingsScreen extends StatelessWidget {
                 children: [
                   Text(
                     'change_password'.tr,
-                    style: Theme.of(context).textTheme.headline5?.copyWith(
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                         fontSize: AppConsts.commonFontSizeFactor * 12.0,
                         color: Colors.black),
                   ),

@@ -7,6 +7,7 @@ import 'package:stylers_in_customer/consts/app_consts.dart';
 import 'package:stylers_in_customer/utils/validations.dart';
 import 'package:stylers_in_customer/controller/change_password/change_password_controller.dart';
 
+import '../../../config/app_colors.dart';
 import '../../widgets/common/common_button.dart';
 import '../../widgets/common/common_password_input_field.dart';
 
@@ -18,11 +19,11 @@ class ChangePasswordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: AppColors.appBackgroundColor,
       appBar: AppBar(
         title: Text(
           'change_password_title'.tr,
-          style: Theme.of(context).textTheme.headline4?.copyWith(
+          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
               color: Colors.black,
               fontSize: AppConsts.commonFontSizeFactor * 16),
         ),
@@ -50,7 +51,7 @@ class ChangePasswordScreen extends StatelessWidget {
                   ),
                   Text(
                     'update_password'.tr,
-                    style: Theme.of(context).textTheme.headline4?.copyWith(
+                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                         color: Colors.black,
                         fontSize: AppConsts.commonFontSizeFactor * 16),
                   ),
@@ -59,7 +60,7 @@ class ChangePasswordScreen extends StatelessWidget {
                   ),
                   Text(
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                    style: Theme.of(context).textTheme.headline5?.copyWith(
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                           color: Colors.black.withOpacity(0.6),
                         ),
                   ),
@@ -68,8 +69,10 @@ class ChangePasswordScreen extends StatelessWidget {
                   ),
                   Text(
                     'enter_current_password'.tr,
-                    style: Theme.of(context).textTheme.headline6?.copyWith(
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                           color: Colors.black,
+                          fontSize: AppConsts.commonFontSizeFactor * 12,
+                          fontWeight: FontWeight.w500,
                         ),
                   ),
                   const SizedBox(
@@ -91,8 +94,10 @@ class ChangePasswordScreen extends StatelessWidget {
                   ),
                   Text(
                     'new_password'.tr,
-                    style: Theme.of(context).textTheme.headline6?.copyWith(
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                           color: Colors.black,
+                          fontSize: AppConsts.commonFontSizeFactor * 12,
+                          fontWeight: FontWeight.w500,
                         ),
                   ),
                   const SizedBox(
@@ -113,8 +118,10 @@ class ChangePasswordScreen extends StatelessWidget {
                   ),
                   Text(
                     'enter_password_again'.tr,
-                    style: Theme.of(context).textTheme.headline6?.copyWith(
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                           color: Colors.black,
+                          fontSize: AppConsts.commonFontSizeFactor * 12,
+                          fontWeight: FontWeight.w500,
                         ),
                   ),
                   const SizedBox(

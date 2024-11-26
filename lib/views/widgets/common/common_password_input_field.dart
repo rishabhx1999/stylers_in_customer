@@ -45,7 +45,7 @@ class CommonPasswordInputField extends StatelessWidget {
           controller: controller,
           style: Theme.of(context)
               .textTheme
-              .headline5
+              .headlineSmall
               ?.copyWith(color: Colors.black),
           keyboardType: TextInputType.visiblePassword,
           cursorColor: AppColors.kPrimaryDarkColor,
@@ -53,7 +53,7 @@ class CommonPasswordInputField extends StatelessWidget {
           obscuringCharacter: '*',
           decoration: InputDecoration(
               hintText: hint.tr,
-              hintStyle: Theme.of(context).textTheme.bodyText1?.copyWith(
+              hintStyle: Theme.of(context).textTheme.bodySmall?.copyWith(
                   fontSize: AppConsts.commonFontSizeFactor * 12,
                   fontWeight: FontWeight.w300,
                   color: Colors.black.withOpacity(0.4)),
@@ -70,11 +70,11 @@ class CommonPasswordInputField extends StatelessWidget {
                   ? 'message_password_helper'.tr
                   : null,errorMaxLines: 3,
               helperMaxLines: 2,
-              helperStyle: Theme.of(context).textTheme.bodyText1?.copyWith(
+              helperStyle: Theme.of(context).textTheme.bodySmall?.copyWith(
                   fontSize: AppConsts.commonFontSizeFactor * 9,
                   fontWeight: FontWeight.w300,
                   color: Colors.black.withOpacity(0.3)),
-              errorStyle: Theme.of(context).textTheme.bodyText1?.copyWith(
+              errorStyle: Theme.of(context).textTheme.bodySmall?.copyWith(
                   fontSize: AppConsts.commonFontSizeFactor * 12,
                   fontWeight: FontWeight.w300,
                   color: Colors.red),

@@ -29,7 +29,7 @@ class PasswordUpdatedScreen extends StatelessWidget {
                   child: Text(
                     textAlign: TextAlign.center,
                     'new_password_has_been_created'.tr,
-                    style: Theme.of(context).textTheme.headline3?.copyWith(
+                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                         fontSize: AppConsts.commonFontSizeFactor * 22,
                         color: Colors.black),
                   ),
@@ -39,7 +39,7 @@ class PasswordUpdatedScreen extends StatelessWidget {
                       const EdgeInsets.only(left: 29.0, right: 29.0, top: 8),
                   child: Text(
                     'password_updated_subtitle'.tr,
-                    style: Theme.of(context).textTheme.headline5?.copyWith(
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                         fontSize: AppConsts.commonFontSizeFactor * 12,
                         color: Colors.black.withOpacity(0.4)),
                   ),

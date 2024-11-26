@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:stylers_in_customer/config/app_colors.dart';
 import 'package:stylers_in_customer/consts/app_icons.dart';
 
-class CommonAppBar extends StatelessWidget with PreferredSizeWidget {
+class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CommonAppBar({Key? key, required this.title, required this.onBackTap})
       : super(key: key);
 

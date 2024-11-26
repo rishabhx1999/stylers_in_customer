@@ -44,7 +44,7 @@
 //                 borderRadius: BorderRadius.circular(11.0)),
 //             child: Text(
 //               category,
-//               style: Theme.of(context).textTheme.bodyText1?.copyWith(
+//               style: Theme.of(context).textTheme.bodySmall?.copyWith(
 //                   color: index == selectedCategoryIndex.value
 //                       ? Colors.white
 //                       : Colors.black,
@@ -95,7 +95,7 @@ class ChipWidget extends StatelessWidget {
           duration: Duration(milliseconds: 200),
           child: Text(
             title,
-            style: Theme.of(context).textTheme.headline5?.copyWith(
+            style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                 color: currentIndex == selectedIndex.value
                     ? Colors.white
                     : Colors.black,

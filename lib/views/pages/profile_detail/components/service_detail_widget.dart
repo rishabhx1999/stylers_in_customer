@@ -29,7 +29,7 @@ class ServiceDetailWidget extends StatelessWidget {
                 service.serviceName ?? '',
                 style: Theme.of(context)
                     .textTheme
-                    .headline5
+                    .headlineSmall
                     ?.copyWith(color: Colors.black),
               ),
               IconButton(
@@ -70,21 +70,21 @@ class ServiceDetailWidget extends StatelessWidget {
                           service.subServices![index].subServiceName ?? '',
                           style: Theme.of(context)
                               .textTheme
-                              .subtitle1
+                              .bodySmall
                               ?.copyWith(
                                   color: Colors.black,
                                   fontSize:
-                                      AppConsts.commonFontSizeFactor * 12),
+                                      AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w300,),
                         ),
                         Text(
                           '${service.subServices![index].rate ?? '0'} \$',
                           style: Theme.of(context)
                               .textTheme
-                              .subtitle1
+                              .bodySmall
                               ?.copyWith(
                                   color: Colors.black,
                                   fontSize:
-                                      AppConsts.commonFontSizeFactor * 12),
+                                      AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w300,),
                         )
                       ],
                     );

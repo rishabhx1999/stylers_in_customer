@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:stylers_in_customer/consts/app_consts.dart';
 import 'package:stylers_in_customer/consts/app_icons.dart';
 
+import '../../../config/app_colors.dart';
 import '../../../model/calendar/calendar_appointments_res_model.dart';
 import '../../widgets/common/common_appointment_widget.dart';
 
@@ -13,11 +14,11 @@ class BookingHistoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: AppColors.appBackgroundColor,
       appBar: AppBar(
         title: Text(
           'booking_history'.tr,
-          style: Theme.of(context).textTheme.headline4?.copyWith(
+          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
               color: Colors.black,
               fontSize: AppConsts.commonFontSizeFactor * 16),
         ),

@@ -26,7 +26,7 @@ class OnBoardingScreen extends StatelessWidget {
         init: OnBoardingController(),
         builder: (OnBoardingController onBoardingController) {
           return Scaffold(
-            backgroundColor: Theme.of(context).backgroundColor,
+            backgroundColor: AppColors.appBackgroundColor,
             appBar: AppBar(
               backgroundColor: AppColors.appBackgroundColor,
               leading: Obx(
@@ -104,7 +104,7 @@ class OnBoardingScreen extends StatelessWidget {
                         text: 'already_have_account'.tr,
                         style: Theme.of(context)
                             .textTheme
-                            .headline5
+                            .headlineSmall
                             ?.copyWith(
                                 color: Colors.black.withOpacity(0.6),
                                 fontSize:
@@ -117,7 +117,7 @@ class OnBoardingScreen extends StatelessWidget {
                         text: 'sign_in'.tr,
                         style: Theme.of(context)
                             .textTheme
-                            .bodyText1
+                            .bodySmall
                             ?.copyWith(
                               color: AppColors.kPrimaryColor,
                               fontWeight: FontWeight.w600,
@@ -142,7 +142,7 @@ class OnBoardingScreen extends StatelessWidget {
                     },
                     child: Text(
                       'login_as_a_visitor'.tr,
-                      style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
                           color: AppColors.kPrimaryColor,
                           fontWeight: FontWeight.w600,
                           fontSize: AppConsts.commonFontSizeFactor * 12,

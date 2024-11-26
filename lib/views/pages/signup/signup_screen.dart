@@ -24,7 +24,7 @@ class SignupScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark
-        .copyWith(statusBarColor: Theme.of(context).backgroundColor));
+        .copyWith(statusBarColor: AppColors.appBackgroundColor));
 
     return Scaffold(
       backgroundColor: AppColors.appBackgroundColor,
@@ -62,7 +62,7 @@ class SignupScreen extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 16, right: 16, top: 16),
                 child: Text(
                   'enter_your_details'.tr,
-                  style: Theme.of(context).textTheme.headline5?.copyWith(
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                       fontSize: AppConsts.commonFontSizeFactor * 22,
                       color: AppColors.textColorPrimary),
                 ),
@@ -72,7 +72,7 @@ class SignupScreen extends StatelessWidget {
                     left: 16.0, right: 16.0, top: 8, bottom: 16),
                 child: Text(
                   'signup_subtitle'.tr,
-                  style: Theme.of(context).textTheme.headline5?.copyWith(
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                       fontSize: AppConsts.commonFontSizeFactor * 14,
                       color: Colors.black.withOpacity(0.6)),
                 ),
@@ -129,7 +129,7 @@ class SignupScreen extends StatelessWidget {
                       _signupController.isUsernameExist.value
                           ? 'username_already_exist'.tr
                           : '',
-                      style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
                           color: Colors.red,
                           fontSize: AppConsts.commonFontSizeFactor * 12,
                           fontWeight: FontWeight.w300),
@@ -152,7 +152,7 @@ class SignupScreen extends StatelessWidget {
                       _signupController.isEmailExist.value
                           ? 'email_already_exist'.tr
                           : '',
-                      style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
                           color: Colors.red,
                           fontSize: AppConsts.commonFontSizeFactor * 12,
                           fontWeight: FontWeight.w300),
@@ -180,7 +180,7 @@ class SignupScreen extends StatelessWidget {
                       _signupController.isPhoneExist.value
                           ? 'phone_already_exist'.tr
                           : '',
-                      style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
                           color: Colors.red,
                           fontSize: AppConsts.commonFontSizeFactor * 12,
                           fontWeight: FontWeight.w300),
@@ -245,7 +245,7 @@ class SignupScreen extends StatelessWidget {
                               text: 'i_agree_to_your'.tr,
                               style: Theme.of(context)
                                   .textTheme
-                                  .bodyText1
+                                  .bodySmall
                                   ?.copyWith(
                                       fontWeight: FontWeight.w300,
                                       fontSize:
@@ -260,7 +260,7 @@ class SignupScreen extends StatelessWidget {
                                 text: 'terms_and_policies'.tr,
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText1
+                                    .bodySmall
                                     ?.copyWith(
                                         fontWeight: FontWeight.w300,
                                         fontSize:

@@ -35,7 +35,7 @@ class FollowerWidget extends StatelessWidget {
                       followerData.user == null
                           ? ''
                           : followerData.user!.name ?? '',
-                      style: Theme.of(context).textTheme.headline5?.copyWith(
+                      style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                           color: Colors.black,
                           fontSize: AppConsts.commonFontSizeFactor * 12),
                     ),
@@ -43,14 +43,14 @@ class FollowerWidget extends StatelessWidget {
                       followerData.user == null
                           ? ''
                           : '@${followerData.user!.userName}' ?? '',
-                      style: Theme.of(context).textTheme.headline5?.copyWith(
+                      style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                           color: Colors.black.withOpacity(0.50),
                           fontSize: AppConsts.commonFontSizeFactor * 12),
                     ),
                   ]),
             ),
             // CommonButtonOutline(
-            //   backgroundColor: Theme.of(context).backgroundColor,
+            //   backgroundColor: AppColors.appBackgroundColor,
             //   borderWidth: 2.0,
             //   width: 112.0,
             //   height: 28.0,

@@ -14,11 +14,11 @@ class CustomerWalletScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: AppColors.appBackgroundColor,
       appBar: AppBar(
         title: Text(
           'your_wallet'.tr,
-          style: Theme.of(context).textTheme.headline4?.copyWith(
+          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
               color: Colors.black,
               fontSize: AppConsts.commonFontSizeFactor * 16),
         ),
@@ -58,7 +58,7 @@ class CustomerWalletScreen extends StatelessWidget {
                             'your_balance'.tr,
                             style: Theme.of(context)
                                 .textTheme
-                                .headline5
+                                .headlineSmall
                                 ?.copyWith(
                                     color: Colors.white.withOpacity(0.65),
                                     fontSize:
@@ -70,7 +70,7 @@ class CustomerWalletScreen extends StatelessWidget {
                           Text(
                             '\$124.53',
                             style:
-                                Theme.of(context).textTheme.headline3?.copyWith(
+                                Theme.of(context).textTheme.headlineMedium?.copyWith(
                                       color: Colors.white,
                                     ),
                           ),
@@ -102,7 +102,7 @@ class CustomerWalletScreen extends StatelessWidget {
                           'Lorem ipsum dolor sit amet, consectetur ',
                           style: Theme.of(context)
                               .textTheme
-                              .headline5
+                              .headlineSmall
                               ?.copyWith(
                                   color: Colors.black,
                                   fontSize:
@@ -131,7 +131,7 @@ class CustomerWalletScreen extends StatelessWidget {
                           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
                           style: Theme.of(context)
                               .textTheme
-                              .headline5
+                              .headlineSmall
                               ?.copyWith(
                                   color: Colors.black,
                                   fontSize:
@@ -160,7 +160,7 @@ class CustomerWalletScreen extends StatelessWidget {
                           'Lorem ipsum dolor sit amet, consectetur',
                           style: Theme.of(context)
                               .textTheme
-                              .headline5
+                              .headlineSmall
                               ?.copyWith(
                                   color: Colors.black,
                                   fontSize:
@@ -189,7 +189,7 @@ class CustomerWalletScreen extends StatelessWidget {
                           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
                           style: Theme.of(context)
                               .textTheme
-                              .headline5
+                              .headlineSmall
                               ?.copyWith(
                                   color: Colors.black,
                                   fontSize:
@@ -208,8 +208,8 @@ class CustomerWalletScreen extends StatelessWidget {
               padding: const EdgeInsets.only(left: 20.0),
               child: Text(
                 'top_up_options'.tr,
-                style: Theme.of(context).textTheme.headline4?.copyWith(
-                      color: Colors.black,
+                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                      color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 18,
                     ),
               ),
             ),
@@ -232,9 +232,9 @@ class CustomerWalletScreen extends StatelessWidget {
                     child: Center(
                       child: Text(
                         '\$10',
-                        style: Theme.of(context).textTheme.headline6?.copyWith(
+                        style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                             color: AppColors.kPrimaryColor,
-                            fontSize: AppConsts.commonFontSizeFactor * 14),
+                            fontSize: AppConsts.commonFontSizeFactor * 14,fontWeight: FontWeight.w500,),
                       ),
                     ),
                   ),
@@ -251,9 +251,9 @@ class CustomerWalletScreen extends StatelessWidget {
                     child: Center(
                       child: Text(
                         '\$50',
-                        style: Theme.of(context).textTheme.headline6?.copyWith(
+                        style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                             color: AppColors.kPrimaryColor,
-                            fontSize: AppConsts.commonFontSizeFactor * 14),
+                            fontSize: AppConsts.commonFontSizeFactor * 14,fontWeight: FontWeight.w500,),
                       ),
                     ),
                   ),
@@ -270,9 +270,9 @@ class CustomerWalletScreen extends StatelessWidget {
                     child: Center(
                       child: Text(
                         '\$100',
-                        style: Theme.of(context).textTheme.headline6?.copyWith(
+                        style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                             color: AppColors.kPrimaryColor,
-                            fontSize: AppConsts.commonFontSizeFactor * 14),
+                            fontSize: AppConsts.commonFontSizeFactor * 14,fontWeight: FontWeight.w500,),
                       ),
                     ),
                   ),
@@ -289,9 +289,9 @@ class CustomerWalletScreen extends StatelessWidget {
                     child: Center(
                       child: Text(
                         '\$200',
-                        style: Theme.of(context).textTheme.headline6?.copyWith(
+                        style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                             color: AppColors.kPrimaryColor,
-                            fontSize: AppConsts.commonFontSizeFactor * 14),
+                            fontSize: AppConsts.commonFontSizeFactor * 14,fontWeight: FontWeight.w500,),
                       ),
                     ),
                   ),

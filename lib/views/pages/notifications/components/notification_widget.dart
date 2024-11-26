@@ -45,7 +45,7 @@ class NotificationWidget extends StatelessWidget {
                               text: 'You have a',
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline5
+                                  .headlineSmall
                                   ?.copyWith(
                                       fontSize:
                                           AppConsts.commonFontSizeFactor * 12,
@@ -54,7 +54,7 @@ class NotificationWidget extends StatelessWidget {
                             text: ' Haircut',
                             style: Theme.of(context)
                                 .textTheme
-                                .bodyText1
+                                .bodySmall
                                 ?.copyWith(
                                     fontSize:
                                         AppConsts.commonFontSizeFactor * 12,
@@ -65,7 +65,7 @@ class NotificationWidget extends StatelessWidget {
                             text: ' appointment today (24-03-2022) with',
                             style: Theme.of(context)
                                 .textTheme
-                                .headline5
+                                .headlineSmall
                                 ?.copyWith(
                                     fontSize:
                                         AppConsts.commonFontSizeFactor * 12,
@@ -75,7 +75,7 @@ class NotificationWidget extends StatelessWidget {
                             text: ' Adam Sandler.',
                             style: Theme.of(context)
                                 .textTheme
-                                .bodyText1
+                                .bodySmall
                                 ?.copyWith(
                                     fontSize:
                                         AppConsts.commonFontSizeFactor * 12,
@@ -90,10 +90,10 @@ class NotificationWidget extends StatelessWidget {
                       Text('18m',
                           style: Theme.of(context)
                               .textTheme
-                              .subtitle1
+                              .bodySmall
                               ?.copyWith(
                                   fontSize: AppConsts.commonFontSizeFactor * 8,
-                                  color: AppColors.color_29.withOpacity(0.6)))
+                                  color: AppColors.color_29.withOpacity(0.6),fontWeight: FontWeight.w300,))
                     ],
                   ),
                 ),

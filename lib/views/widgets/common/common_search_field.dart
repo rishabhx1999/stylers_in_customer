@@ -45,7 +45,7 @@ class CommonSearchField extends StatelessWidget {
               alignLabelWithHint: true,
               // contentPadding: const EdgeInsets.all(8),
               hintText: hint,
-              hintStyle: Theme.of(context).textTheme.bodyText1?.copyWith(
+              hintStyle: Theme.of(context).textTheme.bodySmall?.copyWith(
                   fontWeight: FontWeight.w300,
                   color: Colors.black.withOpacity(0.4),
                   fontSize: AppConsts.commonFontSizeFactor * 12),
@@ -63,7 +63,7 @@ class CommonSearchField extends StatelessWidget {
               disabledBorder: border),
           cursorColor: AppColors.kPrimaryDarkColor,
           keyboardType: TextInputType.text,
-          style: Theme.of(context).textTheme.bodyText1?.copyWith(
+          style: Theme.of(context).textTheme.bodySmall?.copyWith(
                 fontWeight: FontWeight.w300,
                 color: Colors.black,
                 fontSize: AppConsts.commonFontSizeFactor * 12,

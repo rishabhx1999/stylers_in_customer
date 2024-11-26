@@ -25,7 +25,7 @@ class CalendarScreen extends StatelessWidget {
         FocusManager.instance.primaryFocus?.unfocus();
       },
       child: Scaffold(
-          backgroundColor: Theme.of(context).backgroundColor,
+          backgroundColor: AppColors.appBackgroundColor,
           appBar: PreferredSize(
             preferredSize: const Size.fromHeight(206.0),
             child: AppBar(
@@ -55,7 +55,7 @@ class CalendarScreen extends StatelessWidget {
                     () => Text(
                       DateFormat('MMM')
                           .format(_calendarController.selectedDay.value),
-                      style: Theme.of(context).textTheme.headline4?.copyWith(
+                      style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                             fontSize: AppConsts.commonFontSizeFactor * 16,
                             color: Colors.black,
                           ),

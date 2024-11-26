@@ -53,9 +53,9 @@ class HomeHeaderWidget extends StatelessWidget {
                             maxLines: 1,
                             style: Theme.of(context)
                                 .textTheme
-                                .headline4
+                                .headlineMedium
                                 ?.copyWith(
-                                    color: AppColors.appBackgroundColor)),
+                                    color: AppColors.appBackgroundColor,fontSize: AppConsts.commonFontSizeFactor * 18,)),
                       ),
                     ),
                     const SizedBox(
@@ -73,7 +73,7 @@ class HomeHeaderWidget extends StatelessWidget {
               ),
               Text(
                 'what_are_you_looking_for'.tr,
-                style: Theme.of(context).textTheme.headline4?.copyWith(
+                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                     color: Colors.white,
                     fontSize: AppConsts.commonFontSizeFactor * 22),
               ),
@@ -83,7 +83,7 @@ class HomeHeaderWidget extends StatelessWidget {
               Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                   maxLines: 2,
                   overflow: TextOverflow.fade,
-                  style: Theme.of(context).textTheme.headline5?.copyWith(
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                       fontSize: AppConsts.commonFontSizeFactor * 14,
                       color: Colors.white.withOpacity(0.6))),
               Container(
@@ -101,7 +101,7 @@ class HomeHeaderWidget extends StatelessWidget {
                             MaterialStateProperty.all(Colors.white)),
                     label: Text(
                       'search'.tr,
-                      style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
                           color: Colors.black.withOpacity(0.4),
                           fontSize: AppConsts.commonFontSizeFactor * 12,
                           fontWeight: FontWeight.w300),

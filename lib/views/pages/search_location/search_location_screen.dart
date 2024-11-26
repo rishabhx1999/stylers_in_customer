@@ -75,7 +75,7 @@ class SearchLocationScreen extends StatelessWidget {
                         'your_current_location'.tr,
                         style: Theme.of(context)
                             .textTheme
-                            .headline5
+                            .headlineSmall
                             ?.copyWith(
                                 fontSize: AppConsts.commonFontSizeFactor * 15,
                                 color: Colors.black.withOpacity(0.3)),
@@ -87,7 +87,7 @@ class SearchLocationScreen extends StatelessWidget {
                             _searchLocationController.currentCity.value,
                             style: Theme.of(context)
                                 .textTheme
-                                .headline5
+                                .headlineSmall
                                 ?.copyWith(
                                     fontSize:
                                         AppConsts.commonFontSizeFactor * 15,
@@ -111,7 +111,7 @@ class SearchLocationScreen extends StatelessWidget {
                             ? 'message_no_location_found_try_searching'.tr
                             : '',
                     textAlign: TextAlign.center,
-                    style: Theme.of(context).textTheme.headline5?.copyWith(
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                         color: AppColors.color_B8,
                         fontSize: AppConsts.commonFontSizeFactor * 15),
                   ))

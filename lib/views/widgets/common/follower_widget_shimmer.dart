@@ -56,7 +56,7 @@ class FollowerWidgetShimmer extends StatelessWidget {
                   )),
             ]),
             // CommonButtonOutline(
-            //   backgroundColor: Theme.of(context).backgroundColor,
+            //   backgroundColor: AppColors.appBackgroundColor,
             //   borderWidth: 2.0,
             //   width: 112.0,
             //   height: 28.0,

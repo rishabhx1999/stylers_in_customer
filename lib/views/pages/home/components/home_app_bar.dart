@@ -8,7 +8,7 @@ import 'package:stylers_in_customer/consts/app_icons.dart';
 import 'package:stylers_in_customer/consts/app_images.dart';
 import 'package:stylers_in_customer/controller/home/home_controller.dart';
 
-class HomeAppBar extends StatelessWidget with PreferredSizeWidget {
+class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   final _homeController = Get.put(HomeController());
   VoidCallback? leadingIconCallback;
 
@@ -48,8 +48,9 @@ class HomeAppBar extends StatelessWidget with PreferredSizeWidget {
                 ),
                 Text(
                   _homeController.personName.value,
-                  style: Theme.of(context).textTheme.headline6?.copyWith(
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                       fontSize: AppConsts.commonFontSizeFactor * 12,
+                      fontWeight: FontWeight.w500,
                       color: Colors.black),
                 ),
               ],

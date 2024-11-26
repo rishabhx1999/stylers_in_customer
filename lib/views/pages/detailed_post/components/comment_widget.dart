@@ -47,7 +47,7 @@ class CommentWidget extends StatelessWidget {
                         : commentData.user!.name ?? '',
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: Theme.of(context).textTheme.headline5?.copyWith(
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                         fontSize: AppConsts.commonFontSizeFactor * 12,
                         overflow: TextOverflow.ellipsis,
                         color: Colors.black),
@@ -56,7 +56,7 @@ class CommentWidget extends StatelessWidget {
                   //   Helpers.calculateTimeAgo(commentData.createdAt),
                   //   maxLines: 1,
                   //   overflow: TextOverflow.ellipsis,
-                  //   style: Theme.of(context).textTheme.headline5?.copyWith(
+                  //   style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                   //       fontSize: AppConsts.commonFontSizeFactor * 12,
                   //       overflow: TextOverflow.ellipsis,
                   //       color: Colors.black.withOpacity(0.5)),
@@ -69,7 +69,7 @@ class CommentWidget extends StatelessWidget {
                     : '@${commentData.user!.userName}' ?? '',
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style: Theme.of(context).textTheme.headline5?.copyWith(
+                style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                     fontSize: AppConsts.commonFontSizeFactor * 12,
                     color: Colors.black.withOpacity(0.5)),
               ),
@@ -79,7 +79,7 @@ class CommentWidget extends StatelessWidget {
               Text(
                 commentData.comment.toString(),
                 softWrap: true,
-                style: Theme.of(context).textTheme.headline5?.copyWith(
+                style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                     fontSize: AppConsts.commonFontSizeFactor * 12,
                     color: Colors.black),
               ),
@@ -106,7 +106,7 @@ class CommentWidget extends StatelessWidget {
                         ),
                   label: Text(
                     commentData.countLikes.toString(),
-                    style: Theme.of(context).textTheme.headline5?.copyWith(
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                         fontSize: AppConsts.commonFontSizeFactor * 12,
                         color: Colors.black.withOpacity(0.5)),
                   ))

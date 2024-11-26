@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:stylers_in_customer/config/app_routes.dart';
 import 'package:stylers_in_customer/consts/app_consts.dart';
 import 'package:stylers_in_customer/views/pages/inbox/components/inbox_cell_widget.dart';
+import '../../../config/app_colors.dart';
 import '../../../consts/app_images.dart';
 import '../../../controller/inbox/inbox_controller.dart';
 
@@ -14,7 +15,7 @@ class InboxScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: AppColors.appBackgroundColor,
       appBar: AppBar(
         leading: const SizedBox(
           width: 8,
@@ -37,7 +38,7 @@ class InboxScreen extends StatelessWidget {
             ),
             Text(
               'messages'.tr,
-              style: Theme.of(context).textTheme.headline4?.copyWith(
+              style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                     fontSize: AppConsts.commonFontSizeFactor * 16,
                     color: Colors.black,
                   ),
@@ -78,8 +79,9 @@ class InboxScreen extends StatelessWidget {
               ),
               Text(
                 'unread_messages'.tr,
-                style: Theme.of(context).textTheme.headline4?.copyWith(
+                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                       color: Colors.black,
+                      fontSize: AppConsts.commonFontSizeFactor * 18,
                     ),
               ),
               const SizedBox(
@@ -107,8 +109,9 @@ class InboxScreen extends StatelessWidget {
               ),
               Text(
                 'read_messages'.tr,
-                style: Theme.of(context).textTheme.headline4?.copyWith(
+                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                       color: Colors.black,
+                      fontSize: AppConsts.commonFontSizeFactor * 18,
                     ),
               ),
               const SizedBox(

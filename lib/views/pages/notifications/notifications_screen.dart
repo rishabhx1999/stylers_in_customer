@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:stylers_in_customer/consts/app_consts.dart';
 import 'package:stylers_in_customer/views/pages/notifications/components/notification_widget.dart';
 
+import '../../../config/app_colors.dart';
 import '../../../consts/app_images.dart';
 import '../../../controller/notifications/notifications_controller.dart';
 
@@ -14,7 +15,7 @@ class NotificationsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: AppColors.appBackgroundColor,
       appBar: AppBar(
         leading: const SizedBox(
           width: 8,
@@ -37,7 +38,7 @@ class NotificationsScreen extends StatelessWidget {
             ),
             Text(
               'notification'.tr,
-              style: Theme.of(context).textTheme.headline4?.copyWith(
+              style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                     fontSize: AppConsts.commonFontSizeFactor * 16,
                     color: Colors.black,
                   ),

@@ -98,7 +98,8 @@ TextTheme textTheme() {
     //     fontSize: AppConsts.commonFontSizeFactor * 14,
     //     fontWeight: FontWeight.w300,
     //     fontFamily: 'ibmPlexSans'),
-
+    bodyLarge:
+        TextStyle(color: AppColors.textColorPrimary, fontFamily: 'ibmPlexSans'),
     bodyMedium:
         TextStyle(color: AppColors.textColorPrimary, fontFamily: 'ibmPlexSans'),
     bodySmall:
@@ -124,8 +125,8 @@ AppBarTheme appBarTheme() {
   return AppBarTheme(
       color: AppColors.appBarColor,
       elevation: 0,
-      systemOverlayStyle:
-          SystemUiOverlayStyle.dark.copyWith(statusBarColor: Colors.transparent),
+      systemOverlayStyle: SystemUiOverlayStyle.dark
+          .copyWith(statusBarColor: Colors.transparent),
       iconTheme: const IconThemeData(color: Colors.black),
       titleTextStyle: const TextStyle(
           color: Colors.black,

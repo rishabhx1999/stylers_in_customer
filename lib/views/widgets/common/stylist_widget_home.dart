@@ -55,7 +55,7 @@ class StylistWidgetHome extends StatelessWidget {
                           user.name ?? '',
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
-                          style: Theme.of(context).textTheme.headline6,
+                          style: Theme.of(context).textTheme.headlineLarge?.copyWith(fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                         ),
                       ),
                       const SizedBox(
@@ -86,7 +86,7 @@ class StylistWidgetHome extends StatelessWidget {
                     user.role ?? '',
                     maxLines: 2,
                     overflow: TextOverflow.fade,
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodySmall!.copyWith(
                         fontSize: AppConsts.commonFontSizeFactor * 12,
                         fontWeight: FontWeight.w400,
                         color: const Color(0x99000000)),
@@ -107,7 +107,7 @@ class StylistWidgetHome extends StatelessWidget {
                       Text(user.address1 ?? 'not_available'.tr,
                           style: Theme.of(context)
                               .textTheme
-                              .headline5
+                              .headlineSmall
                               ?.copyWith(
                             fontSize: AppConsts.commonFontSizeFactor * 12,
                             fontWeight: FontWeight.w400,

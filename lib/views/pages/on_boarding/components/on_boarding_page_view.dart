@@ -27,14 +27,14 @@ class OnBoardingPageView extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(left: 16,right: 16),
           child: Text(title.tr,
-          style: Theme.of(context).textTheme.headline4?.copyWith(
+          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
           fontSize: AppConsts.commonFontSizeFactor *22
       ),),
         ),
         Padding(
           padding: const EdgeInsets.only(left: 16,right: 16,top: 18),
           child: Text(subtitle.tr,
-            style: Theme.of(context).textTheme.headline5?.copyWith(
+            style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                 fontSize: AppConsts.commonFontSizeFactor *12,
               color: AppColors.colorSubHeading
             ),),

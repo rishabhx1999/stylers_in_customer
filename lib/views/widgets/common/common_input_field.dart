@@ -65,7 +65,7 @@ class CommonInputField extends StatelessWidget {
         maxLines: maxLines ?? 1,
         style: Theme.of(context)
             .textTheme
-            .headline5
+            .headlineSmall
             ?.copyWith(color: Colors.black),
         keyboardType: inputType ?? TextInputType.name,
         cursorColor: AppColors.kPrimaryDarkColor,
@@ -73,13 +73,13 @@ class CommonInputField extends StatelessWidget {
         decoration: InputDecoration(
             hintText: (showFloatingLabel ?? false) ? '' : hint.tr,
             enabled: isEnable ?? true,
-            hintStyle: Theme.of(context).textTheme.bodyText1?.copyWith(
+            hintStyle: Theme.of(context).textTheme.bodySmall?.copyWith(
                 fontSize: AppConsts.commonFontSizeFactor * 12,
                 fontWeight: FontWeight.w300,
                 color: Colors.black.withOpacity(0.4)),
             label: (showFloatingLabel ?? false)
                 ? Text(hint.tr,
-                    style: Theme.of(context).textTheme.headline5?.copyWith(
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                         fontSize: AppConsts.commonFontSizeFactor * 15,
                         color: Colors.black.withOpacity(0.4)))
                 : null,
@@ -92,7 +92,7 @@ class CommonInputField extends StatelessWidget {
             disabledBorder: inputBorder,
             focusedBorder: inputBorder,
             focusedErrorBorder: errorInputBorder,
-            errorStyle: Theme.of(context).textTheme.bodyText1?.copyWith(
+            errorStyle: Theme.of(context).textTheme.bodySmall?.copyWith(
                 fontSize: AppConsts.commonFontSizeFactor * 12,
                 fontWeight: FontWeight.w300,
                 color: Colors.red),

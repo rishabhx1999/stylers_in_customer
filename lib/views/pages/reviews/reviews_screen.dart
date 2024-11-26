@@ -6,6 +6,7 @@ import 'package:stylers_in_customer/consts/app_consts.dart';
 import 'package:stylers_in_customer/consts/app_icons.dart';
 import 'package:stylers_in_customer/controller/reviews/reviews_controller.dart';
 
+import '../../../config/app_colors.dart';
 import '../../widgets/common/chip_widget.dart';
 import '../../widgets/common/review_widget.dart';
 
@@ -17,11 +18,11 @@ class ReviewsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: AppColors.appBackgroundColor,
       appBar: AppBar(
         title: Text(
           'all_reviews'.tr,
-          style: Theme.of(context).textTheme.headline4?.copyWith(
+          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
               color: Colors.black,
               fontSize: AppConsts.commonFontSizeFactor * 16),
         ),
@@ -42,8 +43,9 @@ class ReviewsScreen extends StatelessWidget {
             padding: const EdgeInsets.only(left: 22.0),
             child: Text(
               'your_review'.tr,
-              style: Theme.of(context).textTheme.subtitle1?.copyWith(
-                    color: Colors.black.withOpacity(0.67),
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: Colors.black.withOpacity(0.67),fontSize: AppConsts.commonFontSizeFactor * 14,
+                fontWeight: FontWeight.w300,
                   ),
             ),
           ),

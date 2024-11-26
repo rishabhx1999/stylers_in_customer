@@ -104,7 +104,7 @@ class CommonNewsFeedWidget extends StatelessWidget {
                           overflow: TextOverflow.ellipsis,
                           style: Theme.of(context)
                               .textTheme
-                              .headline5
+                              .headlineSmall
                               ?.copyWith(
                                   fontSize: AppConsts.commonFontSizeFactor * 12,
                                   overflow: TextOverflow.ellipsis,
@@ -116,7 +116,7 @@ class CommonNewsFeedWidget extends StatelessWidget {
                           overflow: TextOverflow.ellipsis,
                           style: Theme.of(context)
                               .textTheme
-                              .headline5
+                              .headlineSmall
                               ?.copyWith(
                                   fontSize: AppConsts.commonFontSizeFactor * 12,
                                   color: Colors.black.withOpacity(0.5)),
@@ -147,7 +147,7 @@ class CommonNewsFeedWidget extends StatelessWidget {
                     child: Text(
                       postData.thought ?? '',
                       softWrap: true,
-                      style: Theme.of(context).textTheme.headline5?.copyWith(
+                      style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                           fontSize: AppConsts.commonFontSizeFactor * 12,
                           color: Colors.black),
                     ),
@@ -222,7 +222,7 @@ class CommonNewsFeedWidget extends StatelessWidget {
                                 postData.totalLikes.toString(),
                                 style: Theme.of(context)
                                     .textTheme
-                                    .headline5
+                                    .headlineSmall
                                     ?.copyWith(
                                         fontSize:
                                             AppConsts.commonFontSizeFactor * 12,
@@ -264,7 +264,7 @@ class CommonNewsFeedWidget extends StatelessWidget {
                                 postData.totalComments.toString(),
                                 style: Theme.of(context)
                                     .textTheme
-                                    .headline5
+                                    .headlineSmall
                                     ?.copyWith(
                                         fontSize:
                                             AppConsts.commonFontSizeFactor * 12,

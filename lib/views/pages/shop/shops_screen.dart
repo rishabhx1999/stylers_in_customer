@@ -28,7 +28,7 @@ class ShopsScreen extends StatelessWidget {
         systemOverlayStyle: Theme.of(context).appBarTheme.systemOverlayStyle,
         title: Text(
           'shops'.tr,
-          style: Theme.of(context).textTheme.headline4?.copyWith(
+          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
               color: Colors.black,
               fontSize: AppConsts.commonFontSizeFactor * 16),
         ),
@@ -106,7 +106,7 @@ class ShopsScreen extends StatelessWidget {
                           'shop_opening_near_you'.tr,
                           style: Theme.of(context)
                               .textTheme
-                              .bodyText1
+                              .bodySmall
                               ?.copyWith(
                                   fontSize: AppConsts.commonFontSizeFactor * 14,
                                   fontWeight: FontWeight.w600,
@@ -155,7 +155,7 @@ class ShopsScreen extends StatelessWidget {
                           'top_rated_shops'.tr,
                           style: Theme.of(context)
                               .textTheme
-                              .bodyText1
+                              .bodySmall
                               ?.copyWith(
                                   fontSize: AppConsts.commonFontSizeFactor * 14,
                                   fontWeight: FontWeight.w600,
@@ -209,7 +209,7 @@ class ShopsScreen extends StatelessWidget {
                           'suggested_for_you'.tr,
                           style: Theme.of(context)
                               .textTheme
-                              .bodyText1
+                              .bodySmall
                               ?.copyWith(
                                   fontSize: AppConsts.commonFontSizeFactor * 14,
                                   fontWeight: FontWeight.w600,

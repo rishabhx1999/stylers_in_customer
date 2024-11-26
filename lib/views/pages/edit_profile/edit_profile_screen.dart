@@ -28,11 +28,11 @@ class EditProfileScreen extends StatelessWidget {
         FocusManager.instance.primaryFocus?.unfocus();
       },
       child: Scaffold(
-        backgroundColor: Theme.of(context).backgroundColor,
+        backgroundColor: AppColors.appBackgroundColor,
         appBar: AppBar(
           title: Text(
             'edit_profile'.tr,
-            style: Theme.of(context).textTheme.headline4?.copyWith(
+            style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                 color: Colors.black,
                 fontSize: AppConsts.commonFontSizeFactor * 16),
           ),
@@ -112,8 +112,8 @@ class EditProfileScreen extends StatelessWidget {
                     'first_name'.tr,
                     style: Theme.of(context)
                         .textTheme
-                        .headline6
-                        ?.copyWith(color: Colors.black),
+                        .headlineSmall
+                        ?.copyWith(color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                   ),
                   const SizedBox(
                     height: 7.0,
@@ -139,8 +139,8 @@ class EditProfileScreen extends StatelessWidget {
                     'last_name'.tr,
                     style: Theme.of(context)
                         .textTheme
-                        .headline6
-                        ?.copyWith(color: Colors.black),
+                        .headlineSmall
+                        ?.copyWith(color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                   ),
                   const SizedBox(
                     height: 7.0,
@@ -166,8 +166,8 @@ class EditProfileScreen extends StatelessWidget {
                     'email'.tr,
                     style: Theme.of(context)
                         .textTheme
-                        .headline6
-                        ?.copyWith(color: Colors.black),
+                        .headlineSmall
+                        ?.copyWith(color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
                   ),
                   const SizedBox(
                     height: 7.0,

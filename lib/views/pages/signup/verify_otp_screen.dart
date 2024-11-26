@@ -23,7 +23,7 @@ class VerifyOtpScreen extends StatelessWidget {
         SystemUiOverlayStyle.dark.copyWith(statusBarColor: Colors.white));
 
     return Scaffold(
-        backgroundColor: Theme.of(context).backgroundColor,
+        backgroundColor: AppColors.appBackgroundColor,
         resizeToAvoidBottomInset: false,
         appBar: CommonAppBar(
             title: '',
@@ -54,7 +54,7 @@ class VerifyOtpScreen extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 16.0, right: 16, top: 32),
                 child: Text(
                   'enter_verification_code'.tr,
-                  style: Theme.of(context).textTheme.headline5?.copyWith(
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                       color: AppColors.textColorPrimary,
                       fontSize: AppConsts.commonFontSizeFactor * 22),
                 ),
@@ -69,7 +69,7 @@ class VerifyOtpScreen extends StatelessWidget {
                             text: 'code_has_been_sent_to'.tr,
                             style: Theme.of(context)
                                 .textTheme
-                                .headline5
+                                .headlineSmall
                                 ?.copyWith(
                                     color: Colors.black.withOpacity(0.6),
                                     fontSize:
@@ -83,7 +83,7 @@ class VerifyOtpScreen extends StatelessWidget {
                               text: _verifyOtpController.registeredEmail.value,
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline5
+                                  .headlineSmall
                                   ?.copyWith(
                                       color: Colors.black.withOpacity(0.6),
                                       fontSize:
@@ -94,7 +94,7 @@ class VerifyOtpScreen extends StatelessWidget {
                   )
                   // Text(
                   //   'otp_subtitle'.tr,
-                  //   style: Theme.of(context).textTheme.headline5?.copyWith(
+                  //   style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                   //       color: Colors.black.withOpacity(0.6),
                   //       fontSize: AppConsts.commonFontSizeFactor * 14),
                   // ),
@@ -107,7 +107,7 @@ class VerifyOtpScreen extends StatelessWidget {
                   length: 4,
                   width: SizeConfig.screenWidth,
                   fieldWidth: 60,
-                  style: Theme.of(context).textTheme.headline2!.copyWith(
+                  style: Theme.of(context).textTheme.headlineLarge!.copyWith(
                       fontSize: AppConsts.commonFontSizeFactor * 30,
                       color: AppColors.kPrimaryColor),
                   spaceBetween: 16,
@@ -143,7 +143,7 @@ class VerifyOtpScreen extends StatelessWidget {
                       text: TextSpan(children: [
                     TextSpan(
                         text: 'did_not_receive_code'.tr,
-                        style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
                             fontSize: AppConsts.commonFontSizeFactor * 12,
                             fontWeight: FontWeight.w300,
                             color: Colors.black.withOpacity(0.7))),
@@ -155,7 +155,7 @@ class VerifyOtpScreen extends StatelessWidget {
                         text: _verifyOtpController.start.value == 0
                             ? 'resend'.tr
                             : '${'resend_code_in'.tr} ${_verifyOtpController.start.value}s',
-                        style: Theme.of(context).textTheme.headline5?.copyWith(
+                        style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                             fontSize: AppConsts.commonFontSizeFactor * 12,
                             color: AppColors.kPrimaryColor,
                             decoration: TextDecoration.underline),

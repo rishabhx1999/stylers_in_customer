@@ -5,6 +5,7 @@ import 'package:stylers_in_customer/consts/app_consts.dart';
 import 'package:stylers_in_customer/consts/app_images.dart';
 import 'package:stylers_in_customer/controller/news_feed/news_feed_controller.dart';
 
+import '../../../config/app_colors.dart';
 import '../../widgets/common/common_news_feed_widget.dart';
 
 class NewsFeedScreen extends StatelessWidget {
@@ -16,7 +17,7 @@ class NewsFeedScreen extends StatelessWidget {
     SystemChrome.setSystemUIOverlayStyle(
         SystemUiOverlayStyle.dark.copyWith(statusBarColor: Colors.white));
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: AppColors.appBackgroundColor,
       appBar: AppBar(
         leading: const SizedBox(
           width: 8,
@@ -41,7 +42,7 @@ class NewsFeedScreen extends StatelessWidget {
                 ),
                 Text(
                   'news_feed'.tr,
-                  style: Theme.of(context).textTheme.headline4?.copyWith(
+                  style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                         fontSize: AppConsts.commonFontSizeFactor * 16,
                         color: Colors.black,
                       ),

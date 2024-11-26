@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:stylers_in_customer/config/app_colors.dart';
 
+import '../../../consts/app_consts.dart';
+
 class CommonButton extends StatelessWidget {
   String text;
   Color? backgroundColor;
@@ -48,10 +50,11 @@ class CommonButton extends StatelessWidget {
           child: Center(
             child: Text(
               text.tr,
-              style: Theme.of(context)
-                  .textTheme
-                  .button
-                  ?.copyWith(color: textColor ?? Colors.white),
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: textColor ?? Colors.white,
+                    fontSize: AppConsts.commonFontSizeFactor * 13,
+                    fontWeight: FontWeight.w600,
+                  ),
             ),
           ),
         ),

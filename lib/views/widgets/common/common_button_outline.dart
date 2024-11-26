@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../config/app_colors.dart';
+import '../../../consts/app_consts.dart';
 
 class CommonButtonOutline extends StatelessWidget {
   String text;
@@ -58,10 +59,11 @@ class CommonButtonOutline extends StatelessWidget {
           child: Center(
             child: Text(
               text.tr,
-              style: Theme.of(context)
-                  .textTheme
-                  .button
-                  ?.copyWith(color: textColor ?? AppColors.kPrimaryColor),
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: textColor ?? AppColors.kPrimaryColor,
+                    fontSize: AppConsts.commonFontSizeFactor * 13,
+                    fontWeight: FontWeight.w600,
+                  ),
             ),
           ),
         ),

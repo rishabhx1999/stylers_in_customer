@@ -59,9 +59,8 @@ class CommonShopGridWidget extends StatelessWidget {
               padding: const EdgeInsets.only(left: 8, right: 8, top: 4),
               child: Text(
                 shopOwner.name ?? '',
-                style: Theme.of(context).textTheme.headline6?.copyWith(
-                    color: Colors.black,
-                    fontSize: AppConsts.commonFontSizeFactor * 12),
+                style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                    color: Colors.black,fontSize: AppConsts.commonFontSizeFactor * 12,fontWeight: FontWeight.w500,),
               ),
             ),
             Padding(
@@ -70,7 +69,7 @@ class CommonShopGridWidget extends StatelessWidget {
                 shopOwner.aboutUs ?? '',
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
-                style: Theme.of(context).textTheme.headline5?.copyWith(
+                style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                     color: Colors.black.withOpacity(0.6),
                     fontSize: AppConsts.commonFontSizeFactor * 10),
               ),
@@ -110,7 +109,7 @@ class CommonShopGridWidget extends StatelessWidget {
                     shopOwner.address1 ?? 'not_available'.tr,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: Theme.of(context).textTheme.headline5?.copyWith(
+                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                         fontSize: AppConsts.commonFontSizeFactor * 12,
                         color: Colors.black.withOpacity(0.6)),
                   ),
